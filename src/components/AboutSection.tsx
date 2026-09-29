@@ -1,14 +1,39 @@
 import { AlertCircle, BadgeCheck, Database, Image, Map as MapIcon, Network } from 'lucide-react';
+import { universities } from '../data/universities';
+import { researchInstitutes } from '../data/researchInstitutes';
 
 /**
  * AboutSection —— 关于数据与免责声明（#about）
  * 契约：contract-v2.md「工A」，无 props
+ * 收录范围数字全部从数据文件动态计算，不硬编码。
  */
 
 const FOCUS_RING =
   'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-agri-accent focus-visible:ring-offset-2';
 
 export default function AboutSection() {
+  // 动态统计：院校 / 普通本科 / 职业本科 / 科研机构 / 国家级总院 / 国家级专业所 / 省级综合农科机构
+  const universityTotal = universities.length;
+  const regularBachelorTotal = universities.filter(
+    (i) => i.educationLevel === 'bachelor' && i.educationType !== 'vocational',
+  ).length;
+  const vocationalBachelorTotal = universities.filter(
+    (i) => i.educationType === 'vocational',
+  ).length;
+  const nationalAcademyTotal = researchInstitutes.filter(
+    (i) => i.institutionKind === 'research_academy' && i.institutionLevel === 'national',
+  ).length;
+  const nationalInstituteTotal = researchInstitutes.filter(
+    (i) => i.institutionKind === 'research_institute' && i.institutionLevel === 'national',
+  ).length;
+  const provincialAcademyTotal = researchInstitutes.filter(
+    (i) => i.institutionKind === 'research_academy' && i.institutionLevel === 'provincial',
+  ).length;
+  const total = universityTotal + researchInstitutes.length;
+  const bachelorSummary =
+    vocationalBachelorTotal > 0
+      ? `其中普通本科 ${regularBachelorTotal} 所、职业本科 ${vocationalBachelorTotal} 所`
+      : '均为普通本科';
   return (
     <section id="about" className="scroll-mt-20 bg-white py-16 sm:py-20" aria-labelledby="about-title">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
@@ -29,8 +54,9 @@ export default function AboutSection() {
               收录范围
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-agri-text sm:text-base">
-              本平台收录 53 所农业院校（含林业、水产类院校与具有涉农办学特色的综合性大学）、中国农业科学院等 4 个国家级科研总院、14 个国家级专业研究所，
-              以及 30 个省级农科机构（含省级综合农科院与省级专业研究所），共计 101 家机构。
+              本平台收录 {universityTotal} 所农业院校（{bachelorSummary}，含林业、水产类院校与具有涉农办学特色的综合性大学）、
+              中国农业科学院等 {nationalAcademyTotal} 个国家级科研总院、{nationalInstituteTotal} 个国家级专业研究所，
+              以及 {provincialAcademyTotal} 个省级综合农科机构，共计 {total} 家机构。
             </p>
             <p className="mt-2 text-sm leading-relaxed text-agri-text sm:text-base">
               特别说明：陕西省无独立建制的省级农业科学院，原陕西省农业科学院于 1999 年并入西北农林科技大学，
