@@ -41,7 +41,7 @@ let chinaMapRegistered = false;
 
 function loadChinaGeoJson(): Promise<GeoJsonData> {
   if (!chinaGeoJsonPromise) {
-    chinaGeoJsonPromise = fetch('/geojson/china.json').then((res) => {
+    chinaGeoJsonPromise = fetch('geojson/china.json').then((res) => {
       if (!res.ok) throw new Error(`china.json 请求失败（HTTP ${res.status}）`);
       return res.json() as Promise<GeoJsonData>;
     });
