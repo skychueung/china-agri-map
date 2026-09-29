@@ -1,6 +1,6 @@
 import { AlertCircle, BadgeCheck, Database, Image, Map as MapIcon, Network } from 'lucide-react';
 import { universities } from '../data/universities';
-import { researchInstitutes } from '../data/researchInstitutes';
+import { researchInstitutes } from '../data/research';
 
 /**
  * AboutSection —— 关于数据与免责声明（#about）
@@ -29,6 +29,9 @@ export default function AboutSection() {
   const provincialAcademyTotal = researchInstitutes.filter(
     (i) => i.institutionKind === 'research_academy' && i.institutionLevel === 'provincial',
   ).length;
+  const provincialInstituteTotal = researchInstitutes.filter(
+    (i) => i.institutionKind === 'research_institute' && i.institutionLevel === 'provincial',
+  ).length;
   const total = universityTotal + researchInstitutes.length;
   const bachelorSummary =
     vocationalBachelorTotal > 0
@@ -56,7 +59,12 @@ export default function AboutSection() {
             <p className="mt-3 text-sm leading-relaxed text-agri-text sm:text-base">
               本平台收录 {universityTotal} 所农业院校（{bachelorSummary}，含林业、水产类院校与具有涉农办学特色的综合性大学）、
               中国农业科学院等 {nationalAcademyTotal} 个国家级科研总院、{nationalInstituteTotal} 个国家级专业研究所，
-              以及 {provincialAcademyTotal} 个省级综合农科机构，共计 {total} 家机构。
+              以及 {provincialAcademyTotal} 个省级综合农科机构及其下属 {provincialInstituteTotal} 个专业研究所，共计 {total} 家机构。
+            </p>
+            <p className="mt-2 text-sm leading-relaxed text-agri-text sm:text-base">
+              科研机构名单经系统审计（截至 2026-09-30）：已系统审计 {nationalAcademyTotal} 个国家级农业科研总院及其直属科研单位母表，
+              并完成 {provincialAcademyTotal} 个省级农科院专业机构母表审计；审计中标记的边界单位（区域平台、实验中心、
+              新型研发机构等）按待核清单管理，未计入收录数。
             </p>
             <p className="mt-2 text-sm leading-relaxed text-agri-text sm:text-base">
               特别说明：陕西省无独立建制的省级农业科学院，原陕西省农业科学院于 1999 年并入西北农林科技大学，
