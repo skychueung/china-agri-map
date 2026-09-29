@@ -18,6 +18,7 @@ export type UniversityAffiliation =
   | 'municipal'
   | 'xpcc';
 export type CoordinateSystem = 'WGS84' | 'GCJ02' | 'BD09';
+export type ResearchUnitType = 'academy' | 'institute' | 'research_center' | 'experimental_center' | 'support_unit';
 export type Region = '东北地区' | '华北地区' | '华东地区' | '华中地区' | '华南地区' | '西南地区' | '西北地区' | '港澳台地区';
 
 export interface AgriculturalInstitution {
@@ -49,6 +50,8 @@ export interface AgriculturalInstitution {
   affiliationCategory?: UniversityAffiliation; // 院校隶属类型
   inclusionReason?: string;              // 涉农综合大学等非典型收录对象的收录依据
   coordinateSystem?: CoordinateSystem;   // 经纬度所属坐标系（逐条标注，未统一转换）
+  researchUnitType?: ResearchUnitType; // 科研单位类型：总院/研究所/研究中心等
+  aliases?: string[];                  // 别称/历史名称（搜索用）
   graduateTraining?: boolean;
   featured?: boolean;
   dataSource?: string;
