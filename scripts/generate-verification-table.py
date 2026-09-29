@@ -50,6 +50,8 @@ def parse(path: Path):
 
 def main():
     rows = list(parse(ROOT / 'src/data/universities.ts'))
+    rows += list(parse(ROOT / 'src/data/universitiesBatch2026A.ts'))
+    rows += list(parse(ROOT / 'src/data/universitiesBatch2026B.ts'))
     rows += list(parse(ROOT / 'src/data/researchInstitutes.ts'))
     lines = [
         '| # | 机构名称 | 类型 | 官方网站 | 核实状态 | 核实日期 |',
