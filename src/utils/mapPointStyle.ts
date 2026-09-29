@@ -5,8 +5,8 @@
 //   POINT_CATEGORY_META: Record<MapPointCategory,
 //     { label: string; color: string; symbol: string; size: number }>
 // 七类点位（颜色 + 形状双重编码，不只靠颜色传达类型）：
-//   本科院校      绿色圆形      #1F6B45
-//   高职院校      浅绿色圆形    #66A182 （educationLevel === '高职'）
+//   普通本科      绿色圆形      #1F6B45
+//   职业本科      浅绿色圆形    #66A182 （educationType === 'vocational' 或 educationLevel === 'associate'）
 //   国家级总院    金色六边形    #D6A84B （path:// 自定义）
 //   国家级专业所  橙色菱形      #E08A3C
 //   省级综合农科院 蓝绿色方形   #2E8B7A
@@ -35,8 +35,8 @@ export interface PointCategoryMeta {
 }
 
 export const POINT_CATEGORY_META: Record<MapPointCategory, PointCategoryMeta> = {
-  university_bachelor: { label: '本科院校', color: '#1F6B45', symbol: 'circle', size: 12 },
-  university_vocational: { label: '高职院校', color: '#66A182', symbol: 'circle', size: 11 },
+  university_bachelor: { label: '普通本科', color: '#1F6B45', symbol: 'circle', size: 12 },
+  university_vocational: { label: '职业本科', color: '#66A182', symbol: 'circle', size: 11 },
   national_academy: { label: '国家级总院', color: '#D6A84B', symbol: HEXAGON_SYMBOL, size: 17 },
   national_institute: { label: '国家级专业所', color: '#E08A3C', symbol: 'diamond', size: 12 },
   provincial_academy: { label: '省级综合农科院', color: '#2E8B7A', symbol: 'rect', size: 11 },
@@ -68,7 +68,10 @@ export function getPointCategory(inst: AgriculturalInstitution): MapPointCategor
     return 'municipal';
   }
   if (inst.institutionKind === 'university') {
-    return inst.educationLevel === '高职' ? 'university_vocational' : 'university_bachelor';
+    // 职业教育（职业本科）或高职专科 → 职业本科点位；其余本科 → 普通本科点位
+    return inst.educationType === 'vocational' || inst.educationLevel === 'associate'
+      ? 'university_vocational'
+      : 'university_bachelor';
   }
   if (inst.institutionKind === 'research_academy') {
     return inst.institutionLevel === 'national' ? 'national_academy' : 'provincial_academy';
