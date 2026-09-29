@@ -4,7 +4,7 @@
 // ==========================================================================
 import type { AgriculturalInstitution } from '../types/institution';
 import { universities } from './universities';
-import { researchInstitutes } from './researchInstitutes';
+import { researchInstitutes } from './research';
 
 export const agriculturalInstitutions: AgriculturalInstitution[] = [
   ...universities,
