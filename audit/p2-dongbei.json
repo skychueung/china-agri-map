@@ -1,0 +1,1070 @@
+{
+  "group": "P2-东北",
+  "auditDate": "2026-09-30",
+  "academies": [
+    {
+      "academy": "辽宁省农业科学院",
+      "academyId": "liaoning-academy-of-agricultural-sciences",
+      "rosterUrl": "https://www.laas.cn/index.aspx （官网“科研机构”栏目，2026-09 抓取）；交叉验证：辽宁省农业科学院2025年度部门预算（ln.gov.cn）二级预算单位名单",
+      "rosterTotal": 30,
+      "units": [
+        {
+          "name": "辽宁省农业科学院玉米研究所",
+          "unitType": "institute",
+          "city": "沈阳",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "玉米育种",
+            "种质资源",
+            "良种繁育"
+          ],
+          "classification": "include",
+          "reason": "官网科研机构栏目在列，院内研究所"
+        },
+        {
+          "name": "辽宁省农业科学院高粱研究所",
+          "unitType": "institute",
+          "city": "沈阳",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "高粱育种",
+            "杂粮作物"
+          ],
+          "classification": "include",
+          "reason": "官网科研机构栏目在列"
+        },
+        {
+          "name": "辽宁省农业科学院作物研究所",
+          "unitType": "institute",
+          "city": "沈阳",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "大豆育种",
+            "杂粮",
+            "作物栽培"
+          ],
+          "classification": "include",
+          "reason": "官网科研机构栏目在列"
+        },
+        {
+          "name": "辽宁省农业科学院蔬菜研究所",
+          "unitType": "institute",
+          "city": "沈阳",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "蔬菜育种",
+            "设施栽培",
+            "种子繁育"
+          ],
+          "classification": "include",
+          "reason": "官网科研机构栏目在列"
+        },
+        {
+          "name": "辽宁省农业科学院花卉研究所",
+          "unitType": "institute",
+          "city": "沈阳",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "花卉育种",
+            "设施农业工程",
+            "种质资源"
+          ],
+          "classification": "include",
+          "reason": "官网科研机构栏目在列，挂辽宁省设施农业工程技术中心牌子"
+        },
+        {
+          "name": "辽宁省农业科学院耕作栽培研究所",
+          "unitType": "institute",
+          "city": "沈阳",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "耕作制度",
+            "作物栽培",
+            "旱作节水"
+          ],
+          "classification": "include",
+          "reason": "官网科研机构栏目在列"
+        },
+        {
+          "name": "辽宁省农业科学院食用菌研究所",
+          "unitType": "institute",
+          "city": "沈阳",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "食用菌育种",
+            "栽培技术",
+            "保鲜加工"
+          ],
+          "classification": "include",
+          "reason": "官网科研机构栏目在列"
+        },
+        {
+          "name": "辽宁省农业科学院植物保护研究所",
+          "unitType": "institute",
+          "city": "沈阳",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "植物保护",
+            "病虫害防控"
+          ],
+          "classification": "include",
+          "reason": "官网科研机构栏目在列"
+        },
+        {
+          "name": "辽宁省农业科学院植物营养与环境资源研究所",
+          "unitType": "institute",
+          "city": "沈阳",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "土壤肥料",
+            "农业环境资源"
+          ],
+          "classification": "include",
+          "reason": "官网科研机构栏目在列"
+        },
+        {
+          "name": "辽宁省农业科学院信息研究所",
+          "unitType": "institute",
+          "city": "沈阳",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "农业信息技术",
+            "农业情报"
+          ],
+          "classification": "include",
+          "reason": "官网科研机构栏目在列，稳定科研建制"
+        },
+        {
+          "name": "辽宁省农业科学院农业质量标准与检测技术研究所",
+          "unitType": "institute",
+          "city": "沈阳",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "农业质量标准",
+            "农产品检测"
+          ],
+          "classification": "include",
+          "reason": "官网科研机构栏目在列"
+        },
+        {
+          "name": "辽宁省农业科学院食品与加工研究所",
+          "unitType": "institute",
+          "city": "沈阳",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "农产品加工",
+            "食品科学",
+            "贮藏保鲜"
+          ],
+          "classification": "include",
+          "reason": "官网科研机构栏目在列"
+        },
+        {
+          "name": "辽宁省农业科学院农村经济研究所",
+          "unitType": "institute",
+          "city": "沈阳",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "农业经济",
+            "农村发展"
+          ],
+          "classification": "include",
+          "reason": "官网科研机构栏目在列，软科学研究所，属稳定科研建制"
+        },
+        {
+          "name": "辽宁省种业创新研究院",
+          "unitType": "research_center",
+          "city": "沈阳",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "种业创新",
+            "生物育种"
+          ],
+          "classification": "review",
+          "reason": "官网科研机构栏目在列，但为新设“研究院”建制，独立性与层级待核实"
+        },
+        {
+          "name": "辽宁省水稻研究所",
+          "unitType": "institute",
+          "city": "沈阳",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "水稻育种",
+            "稻作栽培"
+          ],
+          "classification": "include",
+          "reason": "独立法人院所，2025部门预算二级单位"
+        },
+        {
+          "name": "辽宁省果树科学研究所",
+          "unitType": "institute",
+          "city": "营口",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "果树育种",
+            "果树栽培"
+          ],
+          "classification": "include",
+          "reason": "独立法人院所，驻营口熊岳"
+        },
+        {
+          "name": "辽宁省经济作物研究所",
+          "unitType": "institute",
+          "city": "辽阳",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "棉花",
+            "油料作物",
+            "品种资源"
+          ],
+          "classification": "include",
+          "reason": "独立法人院所，驻辽阳"
+        },
+        {
+          "name": "辽宁省蚕业科学研究所",
+          "unitType": "institute",
+          "city": "丹东",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "柞蚕育种",
+            "蚕业技术"
+          ],
+          "classification": "include",
+          "reason": "独立法人院所，驻丹东凤城"
+        },
+        {
+          "name": "辽宁省微生物科学研究院",
+          "unitType": "institute",
+          "city": "朝阳",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "农业微生物",
+            "微生物肥料"
+          ],
+          "classification": "include",
+          "reason": "独立法人院所，驻朝阳"
+        },
+        {
+          "name": "辽宁省粮食科学研究所",
+          "unitType": "institute",
+          "city": "沈阳",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "粮食储藏",
+            "干燥技术"
+          ],
+          "classification": "include",
+          "reason": "独立法人院所"
+        },
+        {
+          "name": "辽宁省农业机械化研究所",
+          "unitType": "institute",
+          "city": "沈阳",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "农业机械",
+            "农机自动化"
+          ],
+          "classification": "include",
+          "reason": "独立法人院所"
+        },
+        {
+          "name": "辽宁省盐碱地利用研究所",
+          "unitType": "institute",
+          "city": "盘锦",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "盐碱地改良",
+            "耐盐作物"
+          ],
+          "classification": "include",
+          "reason": "独立法人院所，驻盘锦"
+        },
+        {
+          "name": "辽宁省沙地治理与利用研究所",
+          "unitType": "institute",
+          "city": "阜新",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "沙地治理",
+            "花生育种",
+            "风沙地改良"
+          ],
+          "classification": "include",
+          "reason": "独立法人院所，2018年由风沙地所与固沙造林所合并组建，兼挂辽宁省花生研究所牌子"
+        },
+        {
+          "name": "辽宁省旱地农林研究所",
+          "unitType": "institute",
+          "city": "朝阳",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "旱作农业",
+            "水土保持"
+          ],
+          "classification": "include",
+          "reason": "独立法人院所，驻朝阳（原水土保持研究所体系）"
+        },
+        {
+          "name": "辽宁省林业科学研究院",
+          "unitType": "institute",
+          "city": "沈阳",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "林业科学",
+            "森林培育"
+          ],
+          "classification": "include",
+          "reason": "独立法人院所，2018年事业单位改革并入省农科院"
+        },
+        {
+          "name": "辽宁省杨树研究所",
+          "unitType": "institute",
+          "city": "营口",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "杨树育种",
+            "造林技术"
+          ],
+          "classification": "include",
+          "reason": "独立法人院所；驻地盖州（营口）待核实"
+        },
+        {
+          "name": "辽宁省经济林研究所",
+          "unitType": "institute",
+          "city": "大连",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "经济林育种",
+            "干果栽培"
+          ],
+          "classification": "include",
+          "reason": "独立法人院所；驻地待核实"
+        },
+        {
+          "name": "辽宁省森林经营研究所",
+          "unitType": "institute",
+          "city": "丹东",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "森林经营",
+            "森林生态"
+          ],
+          "classification": "include",
+          "reason": "独立法人院所；驻地待核实"
+        },
+        {
+          "name": "辽宁省海洋水产科学研究院",
+          "unitType": "institute",
+          "city": "大连",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "海洋渔业",
+            "水产养殖"
+          ],
+          "classification": "include",
+          "reason": "独立法人院所，纳入省农科院部门预算"
+        },
+        {
+          "name": "辽宁省淡水水产科学研究院",
+          "unitType": "institute",
+          "city": "沈阳",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "淡水养殖",
+            "水产育种"
+          ],
+          "classification": "include",
+          "reason": "独立法人院所；驻地待核实"
+        },
+        {
+          "name": "辽宁省农科院农作物海南育种中心",
+          "unitType": "research_center",
+          "city": "三亚",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "南繁育种"
+          ],
+          "classification": "exclude",
+          "reason": "南繁育种基地性质，属试验/繁育基地而非独立科研研究所"
+        },
+        {
+          "name": "辽宁省农业科学院大连生物技术研究所",
+          "unitType": "institute",
+          "city": "大连",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "农业生物技术",
+            "转基因检测"
+          ],
+          "classification": "review",
+          "reason": "早期资料列为独立法人院所，但未出现在2025部门预算名单及官网现行栏目，建制可能已调整，待核实"
+        }
+      ],
+      "counts": {
+        "include": 29,
+        "review": 2,
+        "exclude": 1
+      }
+    },
+    {
+      "academy": "吉林省农业科学院",
+      "academyId": "jilin-academy-of-agricultural-sciences",
+      "rosterUrl": "https://xxgk.jl.gov.cn/qtdw/jgsw_106703/xxgkmlqy/202308/t20230814_8780624.html （吉林省政府信息公开·吉林省农业科学院机构设置）",
+      "rosterTotal": 20,
+      "units": [
+        {
+          "name": "吉林省农业科学院玉米研究所",
+          "unitType": "institute",
+          "city": "公主岭",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "玉米遗传育种",
+            "种质资源"
+          ],
+          "classification": "include",
+          "reason": "官方机构设置名单在列，驻公主岭院区"
+        },
+        {
+          "name": "吉林省农业科学院水稻研究所",
+          "unitType": "institute",
+          "city": "公主岭",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "水稻育种",
+            "稻作技术"
+          ],
+          "classification": "include",
+          "reason": "官方机构设置名单在列，驻公主岭院区"
+        },
+        {
+          "name": "吉林省农业科学院大豆研究所",
+          "unitType": "institute",
+          "city": "长春",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "大豆育种",
+            "分子标记",
+            "大豆栽培"
+          ],
+          "classification": "include",
+          "reason": "官方机构设置名单在列，驻长春院区"
+        },
+        {
+          "name": "吉林省农业科学院植物保护研究所",
+          "unitType": "institute",
+          "city": "公主岭",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "植物保护",
+            "有害生物防控"
+          ],
+          "classification": "include",
+          "reason": "官方机构设置名单在列，驻公主岭院区"
+        },
+        {
+          "name": "吉林省农业科学院作物资源研究所",
+          "unitType": "institute",
+          "city": "公主岭",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "种质资源",
+            "杂粮杂豆育种"
+          ],
+          "classification": "include",
+          "reason": "官方机构设置名单在列，驻公主岭院区"
+        },
+        {
+          "name": "吉林省农业科学院果树研究所",
+          "unitType": "institute",
+          "city": "公主岭",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "抗寒果树育种",
+            "果树栽培"
+          ],
+          "classification": "include",
+          "reason": "官方机构设置名单在列，驻公主岭院区"
+        },
+        {
+          "name": "吉林省农业科学院经济植物研究所",
+          "unitType": "institute",
+          "city": "公主岭",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "油料作物",
+            "蔬菜薯类",
+            "麻类糖料"
+          ],
+          "classification": "include",
+          "reason": "官方机构设置名单在列，驻公主岭范家屯"
+        },
+        {
+          "name": "吉林省农业科学院农业生物技术研究所",
+          "unitType": "institute",
+          "city": "长春",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "转基因育种",
+            "分子标记",
+            "生物信息学"
+          ],
+          "classification": "include",
+          "reason": "官方机构设置名单在列，驻长春院区"
+        },
+        {
+          "name": "吉林省农业科学院农业资源与环境研究所",
+          "unitType": "institute",
+          "city": "长春",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "农业资源",
+            "生态环境修复",
+            "作物丰产技术"
+          ],
+          "classification": "include",
+          "reason": "官方机构设置名单在列，驻长春院区"
+        },
+        {
+          "name": "吉林省农业科学院农业经济与信息研究所",
+          "unitType": "institute",
+          "city": "长春",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "农业经济",
+            "农业信息",
+            "工程咨询"
+          ],
+          "classification": "include",
+          "reason": "官方机构设置名单在列，驻长春院区"
+        },
+        {
+          "name": "吉林省农业科学院农产品加工研究所",
+          "unitType": "institute",
+          "city": "长春",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "畜产品加工",
+            "粮油加工",
+            "食品生物技术"
+          ],
+          "classification": "include",
+          "reason": "官方机构设置名单在列，驻长春院区"
+        },
+        {
+          "name": "吉林省农业科学院农业质量标准与检测技术研究所",
+          "unitType": "institute",
+          "city": "长春",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "农业质量标准",
+            "农产品检测",
+            "风险评估"
+          ],
+          "classification": "include",
+          "reason": "官方机构设置名单在列"
+        },
+        {
+          "name": "吉林省农业科学院畜牧兽医研究所",
+          "unitType": "institute",
+          "city": "公主岭",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "畜禽育种",
+            "疫病防控",
+            "疫苗研制"
+          ],
+          "classification": "include",
+          "reason": "官方机构设置名单在列，属畜牧科学分院体系，驻公主岭"
+        },
+        {
+          "name": "吉林省农业科学院动物生物技术研究所",
+          "unitType": "institute",
+          "city": "公主岭",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "动物转基因",
+            "基因编辑"
+          ],
+          "classification": "include",
+          "reason": "官方机构设置名单在列，驻公主岭"
+        },
+        {
+          "name": "吉林省农业科学院动物营养与饲料研究所",
+          "unitType": "institute",
+          "city": "公主岭",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "动物营养",
+            "饲料资源利用"
+          ],
+          "classification": "include",
+          "reason": "官方机构设置名单在列，驻公主岭"
+        },
+        {
+          "name": "吉林省农业科学院草地与生态研究所",
+          "unitType": "institute",
+          "city": "公主岭",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "牧草育种",
+            "草地生态",
+            "草畜生产"
+          ],
+          "classification": "include",
+          "reason": "官方机构设置名单在列，驻公主岭"
+        },
+        {
+          "name": "吉林省农业科学院农村能源与生态研究所",
+          "unitType": "institute",
+          "city": "公主岭",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "农村能源",
+            "循环农业",
+            "村镇规划"
+          ],
+          "classification": "include",
+          "reason": "官方机构设置名单在列，驻公主岭"
+        },
+        {
+          "name": "吉林省农业科学院花生研究所",
+          "unitType": "institute",
+          "city": "公主岭",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "花生育种",
+            "油料作物栽培"
+          ],
+          "classification": "include",
+          "reason": "官方机构设置名单在列；驻地按公主岭院区处理，待核实"
+        },
+        {
+          "name": "吉林省农业科学院主粮工程研究中心",
+          "unitType": "research_center",
+          "city": "长春",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "粮食产能",
+            "种植制度",
+            "玉米水稻大豆"
+          ],
+          "classification": "review",
+          "reason": "官方机构设置名单在列，但为“研究中心”建制，是否独立科研实体待核实"
+        },
+        {
+          "name": "吉林省农业科学院试验地综合服务中心",
+          "unitType": "research_center",
+          "city": "公主岭",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "试验地管理服务"
+          ],
+          "classification": "exclude",
+          "reason": "试验地耕作与后勤服务单位，非科研机构"
+        }
+      ],
+      "counts": {
+        "include": 18,
+        "review": 1,
+        "exclude": 1
+      }
+    },
+    {
+      "academy": "黑龙江省农业科学院",
+      "academyId": "heilongjiang-academy-of-agricultural-sciences",
+      "rosterUrl": "黑龙江省农业科学院2024年度公开招聘工作人员公告（所属事业单位名单，www.haas.cn 发布，经多家招聘网站转载核对）；2023年“黑龙江人才周”招聘公告交叉验证",
+      "rosterTotal": 23,
+      "units": [
+        {
+          "name": "黑龙江省农业科学院植物保护研究所",
+          "unitType": "institute",
+          "city": "哈尔滨",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "植物保护",
+            "病虫害防控"
+          ],
+          "classification": "include",
+          "reason": "2024招聘公告所属事业单位，公益一类"
+        },
+        {
+          "name": "黑龙江省农业科学院农业遥感与信息研究所",
+          "unitType": "institute",
+          "city": "哈尔滨",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "农业遥感",
+            "农业信息化"
+          ],
+          "classification": "include",
+          "reason": "2024招聘公告所属事业单位"
+        },
+        {
+          "name": "黑龙江省农业科学院生物技术研究所",
+          "unitType": "institute",
+          "city": "哈尔滨",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "农业生物技术",
+            "分子育种"
+          ],
+          "classification": "include",
+          "reason": "2024招聘公告所属事业单位"
+        },
+        {
+          "name": "黑龙江省农业科学院草业研究所",
+          "unitType": "institute",
+          "city": "哈尔滨",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "牧草育种",
+            "草业生态"
+          ],
+          "classification": "include",
+          "reason": "2024招聘公告所属事业单位"
+        },
+        {
+          "name": "黑龙江省黑土保护利用研究院",
+          "unitType": "institute",
+          "city": "哈尔滨",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "黑土保护",
+            "土壤肥力",
+            "耕地质量"
+          ],
+          "classification": "include",
+          "reason": "2024招聘公告所属事业单位，公益一类研究院建制"
+        },
+        {
+          "name": "黑龙江省农业科学院畜牧研究所",
+          "unitType": "institute",
+          "city": "哈尔滨",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "畜牧育种",
+            "动物营养"
+          ],
+          "classification": "include",
+          "reason": "2024招聘公告所属事业单位"
+        },
+        {
+          "name": "黑龙江省农业科学院经济作物研究所",
+          "unitType": "institute",
+          "city": "哈尔滨",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "经济作物育种",
+            "麻类油料"
+          ],
+          "classification": "include",
+          "reason": "2024招聘公告所属事业单位"
+        },
+        {
+          "name": "黑龙江省农业科学院食品加工研究所",
+          "unitType": "institute",
+          "city": "哈尔滨",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "食品加工",
+            "农产品贮藏"
+          ],
+          "classification": "include",
+          "reason": "2024招聘公告所属事业单位"
+        },
+        {
+          "name": "黑龙江省农业科学院园艺分院",
+          "unitType": "institute",
+          "city": "哈尔滨",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "园艺作物育种",
+            "蔬菜果树"
+          ],
+          "classification": "include",
+          "reason": "2024招聘公告所属事业单位，驻哈尔滨的科研分院"
+        },
+        {
+          "name": "黑龙江省农业科学院作物资源研究所",
+          "unitType": "institute",
+          "city": "哈尔滨",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "种质资源",
+            "作物遗传"
+          ],
+          "classification": "include",
+          "reason": "2024招聘公告所属事业单位"
+        },
+        {
+          "name": "黑龙江省农业科学院玉米研究所",
+          "unitType": "institute",
+          "city": "哈尔滨",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "玉米育种",
+            "种质创新"
+          ],
+          "classification": "include",
+          "reason": "2024招聘公告所属事业单位"
+        },
+        {
+          "name": "黑龙江省农业科学院大豆研究所",
+          "unitType": "institute",
+          "city": "哈尔滨",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "大豆育种",
+            "大豆栽培"
+          ],
+          "classification": "include",
+          "reason": "2024招聘公告所属事业单位"
+        },
+        {
+          "name": "黑龙江省农业科学院农产品质量安全研究所",
+          "unitType": "institute",
+          "city": "哈尔滨",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "农产品质量安全",
+            "检测技术"
+          ],
+          "classification": "include",
+          "reason": "2024招聘公告所属事业单位"
+        },
+        {
+          "name": "黑龙江省农业机械工程科学研究院",
+          "unitType": "institute",
+          "city": "哈尔滨",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "农业机械工程",
+            "农机装备"
+          ],
+          "classification": "include",
+          "reason": "2024招聘公告所属事业单位，公益二类"
+        },
+        {
+          "name": "黑龙江省农业科学院水稻研究所",
+          "unitType": "institute",
+          "city": "佳木斯",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "水稻育种",
+            "寒地稻作"
+          ],
+          "classification": "include",
+          "reason": "2024招聘公告所属事业单位，驻佳木斯"
+        },
+        {
+          "name": "黑龙江省农业科学院牡丹江分院",
+          "unitType": "institute",
+          "city": "牡丹江",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "区域作物育种",
+            "果树",
+            "食用菌"
+          ],
+          "classification": "include",
+          "reason": "地区分院，公益一类稳定科研建制"
+        },
+        {
+          "name": "黑龙江省农业科学院大庆分院",
+          "unitType": "institute",
+          "city": "大庆",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "盐碱地农业",
+            "区域作物"
+          ],
+          "classification": "include",
+          "reason": "地区分院，公益一类稳定科研建制"
+        },
+        {
+          "name": "黑龙江省农业科学院畜牧兽医分院",
+          "unitType": "institute",
+          "city": "齐齐哈尔",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "畜牧",
+            "兽医",
+            "疫病防控"
+          ],
+          "classification": "include",
+          "reason": "地区分院，公益一类稳定科研建制"
+        },
+        {
+          "name": "黑龙江省农业科学院克山分院",
+          "unitType": "institute",
+          "city": "齐齐哈尔",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "大豆育种",
+            "杂粮",
+            "马铃薯"
+          ],
+          "classification": "include",
+          "reason": "地区分院（驻克山县），公益一类稳定科研建制，品种权公告频繁出现"
+        },
+        {
+          "name": "黑龙江省农业科学院齐齐哈尔分院",
+          "unitType": "institute",
+          "city": "齐齐哈尔",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "区域作物育种",
+            "旱作农业"
+          ],
+          "classification": "include",
+          "reason": "地区分院，公益一类稳定科研建制"
+        },
+        {
+          "name": "黑龙江省农业科学院黑河分院",
+          "unitType": "institute",
+          "city": "黑河",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "大豆育种",
+            "寒地作物"
+          ],
+          "classification": "include",
+          "reason": "地区分院，稳定科研建制"
+        },
+        {
+          "name": "黑龙江省农业科学院佳木斯分院",
+          "unitType": "institute",
+          "city": "佳木斯",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "大豆",
+            "水稻",
+            "区域作物"
+          ],
+          "classification": "include",
+          "reason": "地区分院，稳定科研建制"
+        },
+        {
+          "name": "黑龙江省农业科学院绥化分院",
+          "unitType": "institute",
+          "city": "绥化",
+          "sameCity": false,
+          "url": null,
+          "fields": [
+            "大豆育种",
+            "玉米",
+            "区域作物"
+          ],
+          "classification": "include",
+          "reason": "地区分院，稳定科研建制"
+        },
+        {
+          "name": "黑龙江省农业科学院耕作栽培研究所",
+          "unitType": "institute",
+          "city": "哈尔滨",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "耕作制度",
+            "作物栽培"
+          ],
+          "classification": "review",
+          "reason": "见于2023年人才周招聘公告，未出现在2024年招聘名单，建制可能调整，待核实"
+        },
+        {
+          "name": "黑龙江省农业科学院乡村振兴科技研究所",
+          "unitType": "institute",
+          "city": "哈尔滨",
+          "sameCity": true,
+          "url": null,
+          "fields": [
+            "乡村振兴",
+            "农业科技服务"
+          ],
+          "classification": "review",
+          "reason": "仅见于2023年人才周招聘公告，2024年名单未列，建制稳定性待核实"
+        }
+      ],
+      "counts": {
+        "include": 23,
+        "review": 2,
+        "exclude": 0
+      }
+    }
+  ]
+}
