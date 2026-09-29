@@ -108,7 +108,8 @@ function matchesSearch(inst: AgriculturalInstitution, keyword: string): boolean 
     containsIgnoreCase(inst.city, keyword) ||
     containsIgnoreCase(inst.parentInstitutionName, keyword) ||
     containsIgnoreCase(inst.description, keyword) ||
-    (inst.researchFields ?? []).some((field) => field.toLowerCase().includes(keyword))
+    (inst.researchFields ?? []).some((field) => field.toLowerCase().includes(keyword)) ||
+    (inst.aliases ?? []).some((alias) => alias.toLowerCase().includes(keyword))
   );
 }
 
@@ -149,18 +150,45 @@ function matchesSubType(inst: AgriculturalInstitution, subType: ResearchSubType)
 // ───────────────────────────── 契约函数 ─────────────────────────────
 
 /**
+ * 计算某总院的体系成员 id 集合：总院自身 + 全部后代（沿 parentInstitutionId 链）。
+ * 体系筛选与 getSystems 计数共用同一口径：「总院 + 全部后代」。
+ */
+function collectSystemMemberIds(list: AgriculturalInstitution[], systemId: string): Set<string> {
+  const childrenByParent = new Map<string, string[]>();
+  for (const inst of list) {
+    if (!inst.parentInstitutionId) continue;
+    const arr = childrenByParent.get(inst.parentInstitutionId) ?? [];
+    arr.push(inst.id);
+    childrenByParent.set(inst.parentInstitutionId, arr);
+  }
+  const members = new Set<string>([systemId]);
+  const queue = [systemId];
+  while (queue.length > 0) {
+    const current = queue.pop()!;
+    for (const childId of childrenByParent.get(current) ?? []) {
+      if (!members.has(childId)) {
+        members.add(childId);
+        queue.push(childId);
+      }
+    }
+  }
+  return members;
+}
+
+/**
  * 按全部条件过滤机构列表。各条件之间为 AND；subTypes 内部为 OR（并集）。
  *
  * 口径说明（供集成/审计知悉）：
- * - system：仅匹配下属机构（parentInstitutionId === 总院 id），不含总院自身，
+ * - system：匹配「总院自身 + 全部后代」（沿 parentInstitutionId 链逐层下钻），
  *   与 getSystems 的 count 口径严格一致，保证体系下拉中的 name(count) 与
- *   结果计数逐项吻合。总院自身仍可通过大类 tab、省份等其他条件检索到。
+ *   结果计数逐项吻合。
  */
 export function filterInstitutions(
   list: AgriculturalInstitution[],
   f: InstitutionFilters,
 ): AgriculturalInstitution[] {
   const keyword = f.search.trim().toLowerCase();
+  const systemMembers = f.system === 'all' ? null : collectSystemMemberIds(list, f.system);
   return list.filter((inst) => {
     // 关键词
     if (keyword && !matchesSearch(inst, keyword)) return false;
@@ -186,8 +214,8 @@ export function filterInstitutions(
     }
     // 机构级别
     if (f.level !== 'all' && inst.institutionLevel !== f.level) return false;
-    // 科研体系（仅下属机构，口径见上方说明）
-    if (f.system !== 'all' && inst.parentInstitutionId !== f.system) return false;
+    // 科研体系（总院自身 + 全部后代，口径见上方说明）
+    if (systemMembers && !systemMembers.has(inst.id)) return false;
     // 所在地区
     if (f.region !== '全部地区' && inst.region !== f.region) return false;
     // 省份
@@ -273,7 +301,8 @@ export function getProvinces(list: AgriculturalInstitution[]): string[] {
 
 /**
  * 总院列表（数据集中全部 kind=research_academy 机构）。
- * count = 数据集中 parentInstitutionId === 该院 id 的机构数量（仅下属，不含自身）。
+ * count = 总院自身 + 全部后代机构数量（沿 parentInstitutionId 链，含自身），
+ * 与 filterInstitutions 的 system 口径严格一致。
  * 排序：国家级总院在前（保持数据集原顺序），省级农科院按省份习惯顺序排列。
  */
 export function getSystems(list: AgriculturalInstitution[]): InstitutionSystemSummary[] {
@@ -290,7 +319,7 @@ export function getSystems(list: AgriculturalInstitution[]): InstitutionSystemSu
   return academies.map((academy) => ({
     id: academy.id,
     name: academy.name,
-    count: list.filter((i) => i.parentInstitutionId === academy.id).length,
+    count: collectSystemMemberIds(list, academy.id).size,
   }));
 }
 
