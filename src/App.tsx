@@ -15,7 +15,7 @@ import {
   collectDescendantIds,
   findInstitutionTreeNode,
 } from '@/utils/buildInstitutionTree';
-import { computeSubTypeCounts } from '@/utils/institutionFilters';
+import { computeSubTypeCounts, computeUniversityChipCounts } from '@/utils/institutionFilters';
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import InstitutionTypeTabs from '@/components/InstitutionTypeTabs';
@@ -63,6 +63,12 @@ export default function App() {
       computeSubTypeCounts(
         agriculturalInstitutions.filter((i) => i.institutionKind !== 'university'),
       ),
+    [],
+  );
+
+  /** 院校二级 chips 计数（基于全量院校，与当前筛选无关） */
+  const uniCounts = useMemo(
+    () => computeUniversityChipCounts(agriculturalInstitutions),
     [],
   );
 
@@ -160,6 +166,11 @@ export default function App() {
             subTypes={filters.subTypes}
             onSubTypesChange={(subTypes) => setFilters({ subTypes })}
             subTypeCounts={subTypeCounts}
+            uniCategories={filters.uniCategories}
+            onUniCategoriesChange={(uniCategories) => setFilters({ uniCategories })}
+            eduType={filters.eduType}
+            onEduTypeChange={(eduType) => setFilters({ eduType })}
+            uniCounts={uniCounts}
           />
         </section>
 
