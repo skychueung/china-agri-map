@@ -11,8 +11,8 @@
 import type { AgriculturalInstitution } from '../types/institution';
 
 const PLACEHOLDER_IMAGE = {
-  logo: '/placeholders/logo.svg',
-  image: '/placeholders/campus.svg',
+  logo: 'placeholders/logo.svg',
+  image: 'placeholders/campus.svg',
   imageSource: '占位图，正式上线前替换并核查版权',
 } as const;
 
