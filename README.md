@@ -4,7 +4,7 @@
 
 中国农业院校与科研院所地图导航平台：一个汇集全国农业院校与农业科研机构（国家级科研体系 + 省级农科院体系）的单页导航网站。通过中国地图直观展示机构地域分布，支持按地区、省份、机构类型、科研体系、研究领域筛选与关键词搜索，并提供各机构官方网站入口与科研体系层级浏览。
 
-当前收录 **72 个机构**：农业院校 24 所 + 农业科研机构 48 个（国家级总院 4、国家级专业所 14、省级农科院 30）。
+当前收录 **73 个机构**：农业院校 25 所（含涉农特色综合性大学）+ 农业科研机构 48 个（国家级总院 4、国家级专业所 14、省级农科院 30）。
 
 ## 定位声明
 
@@ -41,9 +41,9 @@ app/
 │   ├── main.tsx / index.css          # 入口与全局样式
 │   ├── types/institution.ts          # AgriculturalInstitution / 筛选 / 统计类型定义
 │   ├── data/
-│   │   ├── universities.ts           # ★ 农业院校数据（24 所）
+│   │   ├── universities.ts           # ★ 农业院校数据（25 所）
 │   │   ├── researchInstitutes.ts     # ★ 农业科研机构数据（48 个：总院 + 专业所）
-│   │   ├── agriculturalInstitutions.ts  # 合并导出（72 个，页面唯一数据源）
+│   │   ├── agriculturalInstitutions.ts  # 合并导出（73 个，页面唯一数据源）
 │   │   └── researchFields.ts         # ★ 研究领域受控词表（RESEARCH_FIELDS + FIELD_GROUPS）
 │   ├── hooks/
 │   │   ├── useInstitutionFilters.ts  # 筛选状态 Hook
