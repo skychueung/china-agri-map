@@ -5,17 +5,15 @@
 //       内部按钮 stopPropagation；占位图 onError 兜底
 // ==========================================================================
 import { ExternalLink, MapPin } from 'lucide-react';
-import type { AgriculturalInstitution, InstitutionLevel } from '../types/institution';
+import type { AgriculturalInstitution } from '../types/institution';
+import {
+  UNIVERSITY_AFFILIATION_LABELS,
+  UNIVERSITY_CATEGORY_LABELS,
+  getEducationLevelLabel,
+} from '../utils/institutionFilters';
 
 const LOGO_PLACEHOLDER = 'placeholders/logo.svg';
 const CAMPUS_PLACEHOLDER = 'placeholders/campus.svg';
-
-const LEVEL_LABEL: Record<InstitutionLevel, string> = {
-  national: '国家级',
-  provincial: '省级',
-  municipal: '地市级',
-  regional: '区域级',
-};
 
 /** 图片加载失败兜底：回退到占位图，且避免占位图本身加载失败造成死循环 */
 function fallbackSrc(img: HTMLImageElement, placeholder: string) {
@@ -51,14 +49,23 @@ export function UniversityCard({
     image,
     description,
     researchFields,
-    educationLevel,
-    institutionLevel,
+    universityCategory,
+    affiliationCategory,
+    inclusionReason,
+    graduateTraining,
     website,
     websiteStatus,
   } = university;
 
   const active = selected || highlighted;
   const fields = researchFields ?? [];
+  const categoryLabel = (universityCategory ?? [])
+    .map((c) => UNIVERSITY_CATEGORY_LABELS[c])
+    .join('·');
+  const educationLabel = getEducationLevelLabel(university);
+  const affiliationLabel = affiliationCategory
+    ? UNIVERSITY_AFFILIATION_LABELS[affiliationCategory]
+    : null;
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLElement>) => {
     if (e.key === 'Enter' || e.key === ' ') {
@@ -106,19 +113,21 @@ export function UniversityCard({
 
       <div className="flex flex-wrap gap-2 px-5 pb-4">
         {/* 徽章同时携带文字，不只靠颜色区分 */}
-        {educationLevel && (
+        {categoryLabel && (
           <span className="rounded-full bg-agri-primary/10 px-2.5 py-0.5 text-xs font-medium text-agri-primary">
-            {educationLevel}
+            {categoryLabel}
           </span>
         )}
-        <span
-          className={
-            institutionLevel === 'national'
-              ? 'rounded-full bg-agri-accent/15 px-2.5 py-0.5 text-xs font-medium text-agri-text'
-              : 'rounded-full bg-agri-secondary/15 px-2.5 py-0.5 text-xs font-medium text-agri-secondary'
-          }
-        >
-          {LEVEL_LABEL[institutionLevel]}
+        <span className="rounded-full bg-agri-secondary/15 px-2.5 py-0.5 text-xs font-medium text-agri-secondary">
+          {educationLabel}
+        </span>
+        {affiliationLabel && (
+          <span className="rounded-full bg-agri-accent/15 px-2.5 py-0.5 text-xs font-medium text-agri-text">
+            {affiliationLabel}
+          </span>
+        )}
+        <span className="rounded-full bg-agri-bg px-2.5 py-0.5 text-xs text-agri-muted">
+          研究生培养：{graduateTraining === true ? '是' : '否'}
         </span>
         {fields.slice(0, 2).map((f) => (
           <span
@@ -151,6 +160,13 @@ export function UniversityCard({
           <p className="mt-3 line-clamp-4 text-sm leading-relaxed text-agri-muted">
             {description}
           </p>
+
+          {inclusionReason && (
+            <p className="mt-2 rounded-lg bg-agri-bg/70 px-3 py-2 text-xs leading-relaxed text-agri-muted">
+              <span className="font-medium text-agri-text">收录依据：</span>
+              {inclusionReason}
+            </p>
+          )}
 
           <div className="mt-4 flex flex-wrap gap-2">
             {websiteStatus === 'verified' && website ? (
