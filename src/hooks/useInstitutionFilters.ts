@@ -17,10 +17,11 @@ import {
   getSystems,
 } from '@/utils/institutionFilters';
 
-/** 生成一份全新默认筛选条件（避免与常量共享 subTypes 数组引用） */
+/** 生成一份全新默认筛选条件（避免与常量共享 subTypes / uniCategories 数组引用） */
 const createDefaultFilters = (): InstitutionFilters => ({
   ...DEFAULT_INSTITUTION_FILTERS,
   subTypes: [],
+  uniCategories: [],
 });
 
 export function useInstitutionFilters(list: AgriculturalInstitution[]) {
