@@ -1,0 +1,219 @@
+{
+  "academy": "中国林业科学研究院",
+  "academyId": "chinese-academy-of-forestry",
+  "rosterUrl": "https://www.caf.ac.cn/__local/F/C7/72/A1830DB262BA878CF7A0B5916D9_8280D16C_273C16.pdf",
+  "auditDate": "2026-09-30",
+  "rosterTotal": 19,
+  "units": [
+    {
+      "name": "中国林业科学研究院林业研究所",
+      "shortName": "林业所",
+      "unitType": "institute",
+      "city": "北京",
+      "sameCity": true,
+      "url": "http://rif.caf.ac.cn/",
+      "fields": ["林木遗传育种", "森林培育", "森林经营", "种质资源"],
+      "classification": "include",
+      "reason": "院属核心独立法人研究所，按气候带部署的三个区域所之一，列入院部门预算三级预算单位名单。"
+    },
+    {
+      "name": "中国林业科学研究院亚热带林业研究所",
+      "shortName": "亚林所",
+      "unitType": "institute",
+      "city": "杭州",
+      "sameCity": false,
+      "url": "http://risfcaf.caf.ac.cn/",
+      "fields": ["亚热带森林培育", "经济林育种与培育", "竹资源培育", "生态恢复"],
+      "classification": "include",
+      "reason": "独立法人研究所，位于浙江杭州（富阳），列入院部门预算名单。"
+    },
+    {
+      "name": "中国林业科学研究院热带林业研究所",
+      "shortName": "热林所",
+      "unitType": "institute",
+      "city": "广州",
+      "sameCity": false,
+      "url": "http://ritf.caf.ac.cn/",
+      "fields": ["热带森林生态", "珍贵树种培育", "红树林湿地", "林木遗传育种"],
+      "classification": "include",
+      "reason": "独立法人研究所，位于广州天河区，列入院部门预算名单。"
+    },
+    {
+      "name": "中国林业科学研究院森林生态环境与自然保护研究所",
+      "shortName": "森环森保所",
+      "unitType": "institute",
+      "city": "北京",
+      "sameCity": true,
+      "url": "http://ifeep.caf.ac.cn/",
+      "fields": ["森林生态", "森林保护", "生物多样性保护", "自然保护地"],
+      "classification": "include",
+      "reason": "独立法人研究所（加挂国家林草局世界自然遗产保护研究中心牌子），列入院部门预算名单；现名较旧名『森林生态环境与保护研究所』增加了『自然保护』表述。"
+    },
+    {
+      "name": "中国林业科学研究院资源信息研究所",
+      "shortName": "资源信息所",
+      "unitType": "institute",
+      "city": "北京",
+      "sameCity": true,
+      "url": null,
+      "fields": ["森林资源监测", "林业遥感", "林业信息技术", "森林经理"],
+      "classification": "include",
+      "reason": "独立法人研究所，列入院部门预算名单。"
+    },
+    {
+      "name": "中国林业科学研究院高原林业研究所",
+      "shortName": "高原所",
+      "unitType": "institute",
+      "city": "昆明",
+      "sameCity": false,
+      "url": null,
+      "fields": ["高原林业", "资源昆虫", "林下经济", "西南生态恢复"],
+      "classification": "include",
+      "reason": "更名单位：原『资源昆虫研究所』，2021年事业单位改革中更名为高原林业研究所，位于昆明，列入院部门预算名单。"
+    },
+    {
+      "name": "中国林业科学研究院生态保护与修复研究所",
+      "shortName": "生态所",
+      "unitType": "institute",
+      "city": "北京",
+      "sameCity": true,
+      "url": "https://iecr.caf.ac.cn/",
+      "fields": ["荒漠化防治", "湿地保护", "盐碱地修复", "草原生态"],
+      "classification": "include",
+      "reason": "更名/整合单位：2021年10月依托原林业新技术研究所，整合湿地研究所、荒漠化研究所、盐碱地研究中心、草原研究中心新组建成立；旧的独立『湿地所/荒漠化所/盐碱地中心』不应再单独收录。"
+    },
+    {
+      "name": "中国林业科学研究院林业科技信息研究所",
+      "shortName": "科信所",
+      "unitType": "institute",
+      "city": "北京",
+      "sameCity": true,
+      "url": null,
+      "fields": ["林业科技信息", "林业经济与政策", "林业文献情报", "林业发展战略"],
+      "classification": "include",
+      "reason": "独立法人研究所，列入院部门预算名单（官方预算名称为『林业科技信息研究所』）。"
+    },
+    {
+      "name": "中国林业科学研究院木材工业研究所",
+      "shortName": "木材所",
+      "unitType": "institute",
+      "city": "北京",
+      "sameCity": true,
+      "url": "http://iwp.caf.ac.cn/",
+      "fields": ["木材科学与技术", "人造板", "木材改性", "木结构"],
+      "classification": "include",
+      "reason": "独立法人研究所，列入院部门预算名单。"
+    },
+    {
+      "name": "中国林业科学研究院林产化学工业研究所",
+      "shortName": "林化所",
+      "unitType": "institute",
+      "city": "南京",
+      "sameCity": false,
+      "url": null,
+      "fields": ["林产化学加工", "生物质能源", "林产精细化工", "生物质材料"],
+      "classification": "include",
+      "reason": "独立法人研究所，位于南京，列入院部门预算名单。"
+    },
+    {
+      "name": "国家林业和草原局哈尔滨林业机械研究所",
+      "shortName": "哈尔滨林机所",
+      "unitType": "institute",
+      "city": "哈尔滨",
+      "sameCity": false,
+      "url": null,
+      "fields": ["林草装备", "森林工程", "林业智能装备", "寒温带林业"],
+      "classification": "include",
+      "reason": "国家林草局和中国林科院所属副司局级科研事业单位（加挂『中国林业科学研究院寒温带林业研究中心』牌子），单独编报部门预算，未列入林科院本级预算三级单位名单但确属院属研究所。"
+    },
+    {
+      "name": "中国林业科学研究院经济林研究所",
+      "shortName": "经济林所",
+      "unitType": "institute",
+      "city": "郑州",
+      "sameCity": false,
+      "url": null,
+      "fields": ["经济林育种", "泡桐", "木本粮油", "经济林栽培"],
+      "classification": "include",
+      "reason": "整合单位：2021年改革中由原国家林草局泡桐研究开发中心（郑州）整合经济林研究力量组建，列入院部门预算名单；旧的『泡桐研究开发中心』不应再单独收录。"
+    },
+    {
+      "name": "中国林业科学研究院速生树木研究所",
+      "shortName": "速生树木所",
+      "unitType": "institute",
+      "city": "湛江",
+      "sameCity": false,
+      "url": null,
+      "fields": ["桉树育种", "速生树种培育", "人工林经营", "林木生物技术"],
+      "classification": "include",
+      "reason": "更名单位：原国家林草局桉树研究开发中心（湛江），更名为速生树木研究所，列入院部门预算名单。"
+    },
+    {
+      "name": "国家林业和草原局竹子研究开发中心",
+      "shortName": "竹子中心",
+      "unitType": "research_center",
+      "city": "杭州",
+      "sameCity": false,
+      "url": null,
+      "fields": ["竹子培育", "竹材加工利用", "竹产业技术", "国际竹藤合作"],
+      "classification": "include",
+      "reason": "独立法人研究中心（冠名国家林草局，归口中国林科院管理），位于杭州，列入院部门预算名单。"
+    },
+    {
+      "name": "中国林业科学研究院热带林业实验中心",
+      "shortName": "热林中心",
+      "unitType": "research_center",
+      "city": "凭祥",
+      "sameCity": false,
+      "url": null,
+      "fields": ["热带林业试验示范", "珍贵树种培育", "森林经营试验"],
+      "classification": "review",
+      "reason": "实验中心建制介于研究所与试验站之间（位于广西凭祥，列入院部门预算三级单位名单），按统一规则标 review 待人工裁决。"
+    },
+    {
+      "name": "中国林业科学研究院亚热带林业实验中心",
+      "shortName": "亚林中心",
+      "unitType": "research_center",
+      "city": "分宜",
+      "sameCity": false,
+      "url": null,
+      "fields": ["亚热带林业试验示范", "油茶", "杉木培育"],
+      "classification": "review",
+      "reason": "实验中心建制介于研究所与试验站之间（位于江西分宜，列入院部门预算名单），标 review 待人工裁决。"
+    },
+    {
+      "name": "中国林业科学研究院沙漠林业实验中心",
+      "shortName": "沙林中心",
+      "unitType": "research_center",
+      "city": "磴口",
+      "sameCity": false,
+      "url": null,
+      "fields": ["沙漠林业", "治沙技术", "沙区生态恢复"],
+      "classification": "review",
+      "reason": "实验中心建制介于研究所与试验站之间（位于内蒙古磴口，列入院部门预算名单），标 review 待人工裁决。"
+    },
+    {
+      "name": "中国林业科学研究院华北林业实验中心",
+      "shortName": "华林中心",
+      "unitType": "research_center",
+      "city": "北京",
+      "sameCity": true,
+      "url": null,
+      "fields": ["华北林业试验示范", "森林培育", "种质资源保存"],
+      "classification": "review",
+      "reason": "实验中心建制介于研究所与试验站之间（位于北京，列入院部门预算名单），标 review 待人工裁决。"
+    },
+    {
+      "name": "国家林业和草原局北京林业机械研究所",
+      "shortName": "北京林机所",
+      "unitType": "institute",
+      "city": "北京",
+      "sameCity": true,
+      "url": null,
+      "fields": ["林业机械", "木工机械", "人造板机械"],
+      "classification": "exclude",
+      "reason": "已转制为企业：曾为中国林科院直属科研事业单位，后转制并入中国福马机械集团（国机集团旗下企业），不再属于科研机构序列，也不在林科院2023-2025年部门预算单位名单中。"
+    }
+  ],
+  "counts": {"include": 14, "review": 4, "exclude": 1}
+}
