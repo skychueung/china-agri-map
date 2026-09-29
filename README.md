@@ -4,7 +4,7 @@
 
 中国农业院校与科研院所地图导航平台：一个汇集全国农业院校与农业科研机构（国家级科研体系 + 省级农科院体系）的单页导航网站。通过中国地图直观展示机构地域分布，支持按地区、省份、机构类型、科研体系、研究领域筛选与关键词搜索，并提供各机构官方网站入口与科研体系层级浏览。
 
-当前收录 **128 个机构**：农业院校 80 所（普通本科 75 + 职业本科 5，含林业、水产类院校与涉农特色综合性大学）+ 农业科研机构 48 个（国家级总院 4、国家级专业所 14、省级综合农科院 30）。
+当前收录 **637 个机构**：农业院校 80 所（普通本科 75 + 职业本科 5，含林业、水产类院校与涉农特色综合性大学）+ 农业科研机构 557 个（国家级总院 4、国家级专业所 67、省级综合农科院 30、省级专业所 456）。科研机构名单经 2026-09-30 母表全量审计，见 `RESEARCH_INSTITUTE_AUDIT_2026.md`。
 
 ## 定位声明
 
@@ -45,8 +45,22 @@ app/
 │   │   ├── universitiesBatch2026A.ts # ★ 补录批次 A（15 所：林业 5 + 水产 5 + 农业本科 5）
 │   │   ├── universitiesBatch2026B.ts # ★ 补录批次 B（13 所涉农特色综合大学）
 │   │   ├── universitiesBatch2026C.ts # ★ 补录批次 C（27 所：V3 审计新增，见 UNIVERSITY_AUDIT_2026.md）
-│   │   ├── researchInstitutes.ts     # ★ 农业科研机构数据（48 个：总院 + 专业所）
-│   │   ├── agriculturalInstitutions.ts  # 合并导出（128 个，页面唯一数据源）
+│   │   ├── research/                 # ★ 农业科研机构数据分片（557 个，由 scripts/build-research-data.py 生成）
+│   │   │   ├── index.ts              #   分片合并导出 researchInstitutes
+│   │   │   ├── nationalAcademies.ts  #   国家级总院 4
+│   │   │   ├── caasInstitutes.ts     #   中国农科院直属所（V1 既有 14）
+│   │   │   ├── caasInstitutesV4.ts   #   中国农科院直属所（V4 新增 20）
+│   │   │   ├── cafsInstitutes.ts     #   水科院专业所 9
+│   │   │   ├── cafInstitutes.ts      #   林科院专业所 14
+│   │   │   ├── catasInstitutes.ts    #   热科院专业所 10
+│   │   │   ├── provincialAcademies.ts#   省级综合农科院 30
+│   │   │   ├── provincialInstitutesNorth.ts          # 省级专业所·华北 60
+│   │   │   ├── provincialInstitutesNortheast.ts      # 省级专业所·东北 70
+│   │   │   ├── provincialInstitutesEast.ts           # 省级专业所·华东 118
+│   │   │   ├── provincialInstitutesCentralSouth.ts   # 省级专业所·华中南 91
+│   │   │   ├── provincialInstitutesSouthwest.ts      # 省级专业所·西南 76
+│   │   │   └── provincialInstitutesNorthwest.ts      # 省级专业所·西北 41
+│   │   ├── agriculturalInstitutions.ts  # 合并导出（637 个，页面唯一数据源）
 │   │   └── researchFields.ts         # ★ 研究领域受控词表（RESEARCH_FIELDS + FIELD_GROUPS）
 │   ├── hooks/
 │   │   ├── useInstitutionFilters.ts  # 筛选状态 Hook
@@ -73,14 +87,22 @@ app/
 │       ├── InstitutionTree.tsx       # 体系树递归组件
 │       ├── AboutSection.tsx          # #about 收录范围与免责声明
 │       └── Footer.tsx
+├── audit/                          # ★ 科研机构母表审计底稿（机器可读 JSON）
+│   ├── n1-caas.json ~ n4-catas.json  # 4 个国家级总院母表审计（roster / units / 裁决理由）
+│   ├── p1-huabei.json ~ p6-xibu.json # 30 个省级农科院母表审计（分 6 片）
+│   └── parents.json                  # 总院 / 省院父节点数据
 ├── scripts/
+│   ├── build-research-data.py        # ★ 从 audit JSON + research-id-map.json 生成 src/data/research/ 分片
+│   ├── research-id-map.json          # 机构 id 映射表（生成器的 id 来源）
+│   ├── check-data-integrity.py       # 数据完整性断言（22 项）
+│   ├── check-research-audit-coverage.py # 审计覆盖率断言（国家级 4/4、省级 30/30）
 │   └── generate-verification-table.py  # 生成官网核实状态表（见 WEBSITE_VERIFICATION.md）
 └── e2e-v2.mjs                        # V2 验收 Playwright 脚本（17 项检查）
 ```
 
 ## 机构数据维护
 
-数据文件：`src/data/universities.ts`（院校）与 `src/data/researchInstitutes.ts`（科研机构），统一导出 `AgriculturalInstitution[]`，字段定义见 `src/types/institution.ts`：
+数据文件：`src/data/universities*.ts`（院校）与 `src/data/research/` 分片（科研机构，由 `scripts/build-research-data.py` 从 `audit/*.json` 生成，**不手工编辑**），统一导出 `AgriculturalInstitution[]`，字段定义见 `src/types/institution.ts`：
 
 | 字段 | 类型 | 说明 |
 | --- | --- | --- |
@@ -113,16 +135,16 @@ app/
 | `featured` | `boolean?` | 是否重点展示（体系树排序优先） |
 | `dataSource` / `lastVerifiedAt` | `string?` | 数据来源 / 最近核实日期 |
 
-### 新增一个专业研究所（挂到总院）
+### 新增一个科研机构（推荐流程，V4 起）
 
-1. 在 `src/data/researchInstitutes.ts` 数组中追加一个对象，按上表填写字段。
-2. `id` 不得与现有条目重复。
-3. **挂到总院**：将 `parentInstitutionId` 设为总院的 `id`（如中国农业科学院为 `caas`），`parentInstitutionName` 同步填总院全称。保存后该研究所自动出现在：
-   - 体系筛选下拉（该总院 count +1，与筛选结果严格一致）；
-   - `#hierarchy` 科研体系浏览中该总院的面板树；
-   - 选中该总院时地图的金色描边高亮集合。
-4. 不设 `parentInstitutionId` 的机构视为根节点，卡片「所属体系」显示「独立设置」。
-5. 保存后无需改动其他代码：统计、筛选、地图点位、卡片、体系树均由数据驱动自动生成。
+科研机构数据**不再手工编辑** `src/data/research/` 分片，标准流程为：
+
+1. **先补 audit JSON**：在 `audit/` 对应总院 / 片区 JSON 的 `units` 数组中追加该单位条目（`classification: 'include'`，附 `reason` 与来源），确保母表审计口径先行；
+2. **维护 id 映射**：在 `scripts/research-id-map.json` 中为新机构分配稳定 `id`（英文短横线命名，不得与现有条目重复）；
+3. **重跑生成器**：`python scripts/build-research-data.py`，重新生成 `src/data/research/` 各分片；
+4. **跑断言脚本**：`python scripts/check-data-integrity.py`（22 项）与 `python scripts/check-research-audit-coverage.py`（国家级 4/4、省级 30/30），全部 PASS 后方可提交。
+
+挂到总院：audit JSON 中单位归属某个总院 / 省院即自动建立父子关系，生成器会写入 `parentInstitutionId` / `parentInstitutionName`；保存后该机构自动出现在体系筛选下拉、`#hierarchy` 体系树与地图高亮集合中。不设父机构的单位视为根节点，卡片「所属体系」显示「独立设置」。统计、筛选、地图点位、卡片、体系树均由数据驱动自动生成。
 
 ### 标记官网待核实 / 不可用
 
@@ -140,9 +162,10 @@ app/
 
 ### 治理文档
 
-- `DATA_SCOPE.md`：收录主体范围、A–F 判定标准、排除规则、证据优先级、字段契约、去重与更名规则。
+- `DATA_SCOPE.md`：收录主体范围、高校 A–F 判定标准、科研机构收录阈值（A1/A2/B/C 类）、排除规则、证据优先级、字段契约、去重与更名规则。
 - `UNIVERSITY_AUDIT_2026.md`：全国涉农本科高校 V3 审计报告（2026-09-30，新增 27 所 / 边界待核 2 所 / 排除 3 所 / 更名记录）。
-- `RESEARCH_INSTITUTE_BACKLOG.md`：科研机构扩展 backlog（水科院 / 林科院 / 热科院院属单位母表与后续批次待办）。
+- `RESEARCH_INSTITUTE_AUDIT_2026.md`：农业科研机构母表审计报告（2026-09-30，4 大国家级体系 + 30 省级农科院全量审计，include / review / exclude 裁决与特殊建制说明）。
+- `RESEARCH_INSTITUTE_BACKLOG.md`：V5 科研机构扩展 backlog（地市级机构、review 待裁决、坐标待补、官网核查、边界扩展）。
 
 ## 中国地图数据来源
 
