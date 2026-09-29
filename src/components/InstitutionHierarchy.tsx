@@ -107,7 +107,7 @@ function SystemPanel({
           </span>
           <span className="mt-0.5 block text-xs text-agri-muted">
             {institution.province}
-            {count > 0 ? ` · ${count} 个下属机构` : ' · 数据集内暂无下属机构'}
+            {count > 1 ? ` · ${count - 1} 个下属机构` : ' · 数据集内暂无下属机构'}
           </span>
         </span>
         <ChevronDown
@@ -171,15 +171,28 @@ export function InstitutionHierarchy({
     });
   };
 
+  // 选中机构变化时，沿 parentInstitutionId 链展开其全部祖先（只展开选中路径，
+  // 其余节点保持折叠，避免数百节点一次性渲染）
   useEffect(() => {
-    if (!expandedSystemId) return;
+    if (!selectedId) return;
+    const byId = new Map(institutions.map((i) => [i.id, i]));
+    const ancestors: string[] = [];
+    let current = byId.get(selectedId);
+    const guard = new Set<string>();
+    while (current?.parentInstitutionId && !guard.has(current.id)) {
+      guard.add(current.id);
+      const parent = byId.get(current.parentInstitutionId);
+      if (!parent) break;
+      ancestors.push(parent.id);
+      current = parent;
+    }
+    if (ancestors.length === 0) return;
     setExpandedIds((prev) => {
-      if (prev.has(expandedSystemId)) return prev;
       const next = new Set(prev);
-      next.add(expandedSystemId);
+      for (const id of ancestors) next.add(id);
       return next;
     });
-  }, [expandedSystemId]);
+  }, [selectedId, institutions]);
 
   // 全量机构一次性构树，各总院面板按 id 取子树
   const forest = useMemo(() => buildInstitutionTree(institutions), [institutions]);
