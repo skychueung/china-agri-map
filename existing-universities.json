@@ -1,0 +1,728 @@
+[
+  {
+    "id": "china-agricultural-university",
+    "name": "中国农业大学",
+    "province": "北京市",
+    "level": "national",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "作物科学",
+      "畜牧",
+      "兽医学",
+      "食品科学"
+    ]
+  },
+  {
+    "id": "nanjing-agricultural-university",
+    "name": "南京农业大学",
+    "province": "江苏省",
+    "level": "national",
+    "educationLevel": "本科",
+    "graduateTraining": null,
+    "fields": [
+      "作物科学",
+      "植物保护",
+      "畜牧",
+      "兽医学"
+    ]
+  },
+  {
+    "id": "huazhong-agricultural-university",
+    "name": "华中农业大学",
+    "province": "湖北省",
+    "level": "national",
+    "educationLevel": "本科",
+    "graduateTraining": null,
+    "fields": [
+      "作物科学",
+      "园艺",
+      "畜牧",
+      "兽医学"
+    ]
+  },
+  {
+    "id": "south-china-agricultural-university",
+    "name": "华南农业大学",
+    "province": "广东省",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": null,
+    "fields": [
+      "作物科学",
+      "畜牧",
+      "兽医学",
+      "热带农业"
+    ]
+  },
+  {
+    "id": "northwest-af-university",
+    "name": "西北农林科技大学",
+    "province": "陕西省",
+    "level": "national",
+    "educationLevel": "本科",
+    "graduateTraining": null,
+    "fields": [
+      "作物科学",
+      "植物保护",
+      "畜牧",
+      "林业"
+    ]
+  },
+  {
+    "id": "northeast-agricultural-university",
+    "name": "东北农业大学",
+    "province": "黑龙江省",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": null,
+    "fields": [
+      "作物科学",
+      "畜牧",
+      "兽医学",
+      "食品科学"
+    ]
+  },
+  {
+    "id": "sichuan-agricultural-university",
+    "name": "四川农业大学",
+    "province": "四川省",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": null,
+    "fields": [
+      "作物科学",
+      "畜牧",
+      "兽医学",
+      "林业"
+    ]
+  },
+  {
+    "id": "shandong-agricultural-university",
+    "name": "山东农业大学",
+    "province": "山东省",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "作物科学",
+      "畜牧",
+      "兽医学",
+      "农业机械"
+    ]
+  },
+  {
+    "id": "henan-agricultural-university",
+    "name": "河南农业大学",
+    "province": "河南省",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": null,
+    "fields": [
+      "作物科学",
+      "畜牧",
+      "兽医学",
+      "林业"
+    ]
+  },
+  {
+    "id": "hunan-agricultural-university",
+    "name": "湖南农业大学",
+    "province": "湖南省",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "作物科学",
+      "园艺",
+      "畜牧",
+      "兽医学"
+    ]
+  },
+  {
+    "id": "hebei-agricultural-university",
+    "name": "河北农业大学",
+    "province": "河北省",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "作物科学",
+      "园艺",
+      "植物保护",
+      "畜牧"
+    ]
+  },
+  {
+    "id": "anhui-agricultural-university",
+    "name": "安徽农业大学",
+    "province": "安徽省",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": null,
+    "fields": [
+      "作物科学",
+      "园艺",
+      "畜牧",
+      "兽医学"
+    ]
+  },
+  {
+    "id": "shenyang-agricultural-university",
+    "name": "沈阳农业大学",
+    "province": "辽宁省",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": null,
+    "fields": [
+      "作物科学",
+      "园艺",
+      "畜牧",
+      "兽医学"
+    ]
+  },
+  {
+    "id": "jilin-agricultural-university",
+    "name": "吉林农业大学",
+    "province": "吉林省",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": null,
+    "fields": [
+      "作物科学",
+      "畜牧",
+      "兽医学",
+      "食品科学"
+    ]
+  },
+  {
+    "id": "jilin-university",
+    "name": "吉林大学",
+    "province": "吉林省",
+    "level": "national",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "兽医学",
+      "动物疫病防控",
+      "畜牧",
+      "植物保护",
+      "食品科学"
+    ]
+  },
+  {
+    "id": "shanxi-agricultural-university",
+    "name": "山西农业大学",
+    "province": "山西省",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "作物科学",
+      "园艺",
+      "畜牧",
+      "兽医学"
+    ]
+  },
+  {
+    "id": "inner-mongolia-agricultural-university",
+    "name": "内蒙古农业大学",
+    "province": "内蒙古自治区",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "畜牧",
+      "兽医学",
+      "草业",
+      "林业"
+    ]
+  },
+  {
+    "id": "yunnan-agricultural-university",
+    "name": "云南农业大学",
+    "province": "云南省",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "作物科学",
+      "畜牧",
+      "兽医学",
+      "植物保护"
+    ]
+  },
+  {
+    "id": "gansu-agricultural-university",
+    "name": "甘肃农业大学",
+    "province": "甘肃省",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "作物科学",
+      "草业",
+      "畜牧",
+      "兽医学"
+    ]
+  },
+  {
+    "id": "xinjiang-agricultural-university",
+    "name": "新疆农业大学",
+    "province": "新疆维吾尔自治区",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "作物科学",
+      "园艺",
+      "畜牧",
+      "兽医学"
+    ]
+  },
+  {
+    "id": "fujian-agriculture-and-forestry-university",
+    "name": "福建农林大学",
+    "province": "福建省",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "作物科学",
+      "林业",
+      "畜牧",
+      "生物技术"
+    ]
+  },
+  {
+    "id": "zhejiang-af-university",
+    "name": "浙江农林大学",
+    "province": "浙江省",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "作物科学",
+      "林业",
+      "畜牧",
+      "农业机械"
+    ]
+  },
+  {
+    "id": "beijing-university-of-agriculture",
+    "name": "北京农学院",
+    "province": "北京市",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "作物科学",
+      "园艺",
+      "畜牧",
+      "兽医学"
+    ]
+  },
+  {
+    "id": "heilongjiang-bayi-agricultural-university",
+    "name": "黑龙江八一农垦大学",
+    "province": "黑龙江省",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": null,
+    "fields": [
+      "作物科学",
+      "畜牧",
+      "兽医学",
+      "农业机械"
+    ]
+  },
+  {
+    "id": "tarim-university",
+    "name": "塔里木大学",
+    "province": "新疆维吾尔自治区",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "作物科学",
+      "畜牧",
+      "兽医学",
+      "农业机械"
+    ]
+  },
+  {
+    "id": "beijing-forestry-university",
+    "name": "北京林业大学",
+    "province": "北京市",
+    "level": "national",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "林业",
+      "农业生态",
+      "草业",
+      "园艺"
+    ]
+  },
+  {
+    "id": "northeast-forestry-university",
+    "name": "东北林业大学",
+    "province": "黑龙江省",
+    "level": "national",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "林业",
+      "农业生态",
+      "生物技术"
+    ]
+  },
+  {
+    "id": "nanjing-forestry-university",
+    "name": "南京林业大学",
+    "province": "江苏省",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "林业",
+      "农业生态",
+      "生物技术"
+    ]
+  },
+  {
+    "id": "central-south-forestry-university",
+    "name": "中南林业科技大学",
+    "province": "湖南省",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "林业",
+      "农业生态",
+      "农产品加工"
+    ]
+  },
+  {
+    "id": "southwest-forestry-university",
+    "name": "西南林业大学",
+    "province": "云南省",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "林业",
+      "农业生态",
+      "园艺"
+    ]
+  },
+  {
+    "id": "ocean-university-of-china",
+    "name": "中国海洋大学",
+    "province": "山东省",
+    "level": "national",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "水产",
+      "生物技术",
+      "食品科学"
+    ]
+  },
+  {
+    "id": "shanghai-ocean-university",
+    "name": "上海海洋大学",
+    "province": "上海市",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "水产",
+      "食品科学",
+      "农业生态"
+    ]
+  },
+  {
+    "id": "dalian-ocean-university",
+    "name": "大连海洋大学",
+    "province": "辽宁省",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "水产",
+      "食品科学"
+    ]
+  },
+  {
+    "id": "zhejiang-ocean-university",
+    "name": "浙江海洋大学",
+    "province": "浙江省",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "水产",
+      "食品科学"
+    ]
+  },
+  {
+    "id": "guangdong-ocean-university",
+    "name": "广东海洋大学",
+    "province": "广东省",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "水产",
+      "食品科学",
+      "畜牧"
+    ]
+  },
+  {
+    "id": "jiangxi-agricultural-university",
+    "name": "江西农业大学",
+    "province": "江西省",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "作物科学",
+      "畜牧",
+      "兽医学",
+      "林业"
+    ]
+  },
+  {
+    "id": "qingdao-agricultural-university",
+    "name": "青岛农业大学",
+    "province": "山东省",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "作物科学",
+      "园艺",
+      "植物保护",
+      "畜牧"
+    ]
+  },
+  {
+    "id": "tianjin-agricultural-university",
+    "name": "天津农学院",
+    "province": "天津市",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "园艺",
+      "水产",
+      "畜牧",
+      "食品科学"
+    ]
+  },
+  {
+    "id": "zhongkai-university",
+    "name": "仲恺农业工程学院",
+    "province": "广东省",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "园艺",
+      "植物保护",
+      "食品科学",
+      "农业机械"
+    ]
+  },
+  {
+    "id": "tibet-agri-animal-husbandry-university",
+    "name": "西藏农牧大学",
+    "province": "西藏自治区",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "畜牧",
+      "兽医学",
+      "草业",
+      "林业"
+    ]
+  },
+  {
+    "id": "zhejiang-university",
+    "name": "浙江大学",
+    "province": "浙江省",
+    "level": "national",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "作物科学",
+      "植物保护",
+      "园艺",
+      "生物技术"
+    ]
+  },
+  {
+    "id": "southwest-university",
+    "name": "西南大学",
+    "province": "重庆市",
+    "level": "national",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "作物科学",
+      "园艺",
+      "畜牧",
+      "农业资源与环境"
+    ]
+  },
+  {
+    "id": "hainan-university",
+    "name": "海南大学",
+    "province": "海南省",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "热带农业",
+      "作物科学",
+      "园艺"
+    ]
+  },
+  {
+    "id": "yangzhou-university",
+    "name": "扬州大学",
+    "province": "江苏省",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "作物科学",
+      "兽医学",
+      "畜牧",
+      "作物遗传育种"
+    ]
+  },
+  {
+    "id": "guangxi-university",
+    "name": "广西大学",
+    "province": "广西壮族自治区",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "作物科学",
+      "畜牧",
+      "兽医学",
+      "园艺"
+    ]
+  },
+  {
+    "id": "guizhou-university",
+    "name": "贵州大学",
+    "province": "贵州省",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "植物保护",
+      "作物科学",
+      "畜牧"
+    ]
+  },
+  {
+    "id": "shihezi-university",
+    "name": "石河子大学",
+    "province": "新疆维吾尔自治区",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "作物科学",
+      "畜牧",
+      "兽医学",
+      "农业机械"
+    ]
+  },
+  {
+    "id": "ningxia-university",
+    "name": "宁夏大学",
+    "province": "宁夏回族自治区",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "作物科学",
+      "畜牧",
+      "草业"
+    ]
+  },
+  {
+    "id": "qinghai-university",
+    "name": "青海大学",
+    "province": "青海省",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "畜牧",
+      "兽医学",
+      "草业",
+      "作物科学"
+    ]
+  },
+  {
+    "id": "yanbian-university",
+    "name": "延边大学",
+    "province": "吉林省",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "作物科学",
+      "园艺",
+      "畜牧",
+      "生物技术"
+    ]
+  },
+  {
+    "id": "yangtze-university",
+    "name": "长江大学",
+    "province": "湖北省",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "作物科学",
+      "植物保护",
+      "畜牧"
+    ]
+  },
+  {
+    "id": "lanzhou-university",
+    "name": "兰州大学",
+    "province": "甘肃省",
+    "level": "national",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "草业",
+      "农业生态",
+      "畜牧"
+    ]
+  },
+  {
+    "id": "jiangsu-university",
+    "name": "江苏大学",
+    "province": "江苏省",
+    "level": "provincial",
+    "educationLevel": "本科",
+    "graduateTraining": true,
+    "fields": [
+      "农业机械",
+      "智慧农业",
+      "农产品加工"
+    ]
+  }
+]
