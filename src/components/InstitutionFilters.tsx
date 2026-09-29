@@ -16,7 +16,9 @@ import type {
 } from '@/types/institution';
 import { FIELD_GROUPS } from '@/data/researchFields';
 import {
+  EDU_TYPE_LABELS,
   RESEARCH_SUB_TYPE_LABELS,
+  UNIVERSITY_CATEGORY_LABELS,
   type InstitutionSystemSummary,
 } from '@/utils/institutionFilters';
 import { cn } from '@/lib/utils';
@@ -68,6 +70,10 @@ function buildActiveSummary(
   if (filters.subTypes.length > 0) {
     parts.push(filters.subTypes.map((s) => RESEARCH_SUB_TYPE_LABELS[s]).join('、'));
   }
+  if (filters.uniCategories.length > 0) {
+    parts.push(filters.uniCategories.map((c) => `${UNIVERSITY_CATEGORY_LABELS[c]}类`).join('、'));
+  }
+  if (filters.eduType !== 'all') parts.push(EDU_TYPE_LABELS[filters.eduType]);
   if (filters.level !== 'all') parts.push(LEVEL_LABELS[filters.level]);
   if (filters.system !== 'all') {
     parts.push(systems.find((s) => s.id === filters.system)?.name ?? '指定科研体系');
