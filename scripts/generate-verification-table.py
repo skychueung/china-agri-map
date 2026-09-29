@@ -43,7 +43,9 @@ def parse(path: Path):
         wm = re.search(r"website: '([^']+)'", b)
         website = wm.group(1) if wm else '—'
         status = re.search(r"websiteStatus: '([^']+)'", b).group(1)
-        yield name, f'{KIND_LABEL[kind]}·{LEVEL_LABEL[level]}', website, STATUS_LABEL[status]
+        vm = re.search(r"lastVerifiedAt: '([^']+)'", b)
+        verified_at = vm.group(1) if vm else VERIFY_DATE
+        yield name, f'{KIND_LABEL[kind]}·{LEVEL_LABEL[level]}', website, STATUS_LABEL[status], verified_at
 
 
 def main():
@@ -53,8 +55,8 @@ def main():
         '| # | 机构名称 | 类型 | 官方网站 | 核实状态 | 核实日期 |',
         '| --- | --- | --- | --- | --- | --- |',
     ]
-    for i, (name, kind, website, status) in enumerate(rows, 1):
-        lines.append(f'| {i} | {name} | {kind} | {website} | {status} | {VERIFY_DATE} |')
+    for i, (name, kind, website, status, verified_at) in enumerate(rows, 1):
+        lines.append(f'| {i} | {name} | {kind} | {website} | {status} | {verified_at} |')
     out = ROOT / 'verification-table.md'
     out.write_text('\n'.join(lines) + '\n', encoding='utf-8', newline='\n')
     print(f'共 {len(rows)} 个机构，已写入 {out.name}')
