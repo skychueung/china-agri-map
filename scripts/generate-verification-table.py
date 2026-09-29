@@ -7,13 +7,33 @@
 
 输出：app/verification-table.md（Markdown 表格，含表头共 74 行，72 个机构）。
 核实日期统一取脚本内 VERIFY_DATE 常量；如需更新核实日期，改常量后重跑即可。
-数据源：src/data/universities.ts、src/data/researchInstitutes.ts（仅读取，不修改）。
+数据源：src/data/universities*.ts、src/data/research/ 各分片（仅读取，不修改）。
 """
 import re
 from pathlib import Path
 
 VERIFY_DATE = '2026-07-19'
 ROOT = Path(__file__).resolve().parent.parent
+
+DATA_FILES = [
+    'src/data/universities.ts',
+    'src/data/universitiesBatch2026A.ts',
+    'src/data/universitiesBatch2026B.ts',
+    'src/data/universitiesBatch2026C.ts',
+    'src/data/research/nationalAcademies.ts',
+    'src/data/research/caasInstitutes.ts',
+    'src/data/research/caasInstitutesV4.ts',
+    'src/data/research/cafsInstitutes.ts',
+    'src/data/research/cafInstitutes.ts',
+    'src/data/research/catasInstitutes.ts',
+    'src/data/research/provincialAcademies.ts',
+    'src/data/research/provincialInstitutesNorth.ts',
+    'src/data/research/provincialInstitutesNortheast.ts',
+    'src/data/research/provincialInstitutesEast.ts',
+    'src/data/research/provincialInstitutesCentralSouth.ts',
+    'src/data/research/provincialInstitutesSouthwest.ts',
+    'src/data/research/provincialInstitutesNorthwest.ts',
+]
 
 KIND_LABEL = {
     'university': '农业院校',
@@ -49,11 +69,9 @@ def parse(path: Path):
 
 
 def main():
-    rows = list(parse(ROOT / 'src/data/universities.ts'))
-    rows += list(parse(ROOT / 'src/data/universitiesBatch2026A.ts'))
-    rows += list(parse(ROOT / 'src/data/universitiesBatch2026B.ts'))
-    rows += list(parse(ROOT / 'src/data/universitiesBatch2026C.ts'))
-    rows += list(parse(ROOT / 'src/data/researchInstitutes.ts'))
+    rows = []
+    for f in DATA_FILES:
+        rows += list(parse(ROOT / f))
     lines = [
         '| # | 机构名称 | 类型 | 官方网站 | 核实状态 | 核实日期 |',
         '| --- | --- | --- | --- | --- | --- |',
