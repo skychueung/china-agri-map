@@ -13,6 +13,8 @@ import type {
   InstitutionFilters,
   InstitutionStats,
   ResearchSubType,
+  UniversityAffiliation,
+  UniversityCategory,
 } from '@/types/institution';
 import { RESEARCH_FIELDS } from '@/data/researchFields';
 
@@ -21,6 +23,8 @@ export const DEFAULT_INSTITUTION_FILTERS: InstitutionFilters = {
   search: '',
   kind: 'all',
   subTypes: [],
+  uniCategories: [],
+  eduType: 'all',
   level: 'all',
   system: 'all',
   region: '全部地区',
@@ -41,6 +45,39 @@ export const RESEARCH_SUB_TYPE_LABELS: Record<ResearchSubType, string> = {
   aquatic: '水产科研机构',
   veterinary: '畜牧兽医科研机构',
 };
+
+/** 院校涉农分类中文标签（二级 chips、卡片徽章与结果摘要行共用） */
+export const UNIVERSITY_CATEGORY_LABELS: Record<UniversityCategory, string> = {
+  agriculture: '农业',
+  forestry: '林业',
+  aquatic: '水产',
+  animal_husbandry: '农牧兽医',
+  agricultural_engineering: '农业工程',
+  agriculture_featured_comprehensive: '涉农综合',
+};
+
+/** 院校隶属类型中文标签（卡片徽章用） */
+export const UNIVERSITY_AFFILIATION_LABELS: Record<UniversityAffiliation, string> = {
+  ministry_of_education: '教育部直属',
+  other_central: '其他中央部委',
+  provincial: '省属',
+  municipal: '市属',
+  xpcc: '兵团',
+};
+
+/** 院校办学类型筛选值中文标签（eduType chips 与结果摘要行共用） */
+export const EDU_TYPE_LABELS: Record<InstitutionFilters['eduType'], string> = {
+  all: '全部',
+  regular_bachelor: '普通本科',
+  vocational_bachelor: '职业本科',
+};
+
+/** 由 educationLevel + educationType 推导办学层次中文标签（院校卡片用） */
+export function getEducationLevelLabel(inst: AgriculturalInstitution): string {
+  if (inst.educationLevel === 'associate') return '高职专科';
+  if (inst.educationType === 'vocational') return '职业本科';
+  return '普通本科';
+}
 
 /** 科研体系概要（总院 + 下属机构数），结构同契约 Array<{ id; name; count }> */
 export interface InstitutionSystemSummary {
@@ -132,6 +169,21 @@ export function filterInstitutions(
     if (f.kind === 'research' && !isResearchInstitution(inst)) return false;
     // 科研院所二级类型（空数组 = 不限制；多选取并集）
     if (f.subTypes.length > 0 && !f.subTypes.some((s) => matchesSubType(inst, s))) return false;
+    // 院校涉农分类（空数组 = 不限制；多选取并集，仅对院校生效）
+    if (f.uniCategories.length > 0) {
+      if (inst.institutionKind !== 'university') return false;
+      const cats = inst.universityCategory ?? [];
+      if (!f.uniCategories.some((c) => cats.includes(c))) return false;
+    }
+    // 院校办学类型（仅对院校生效）
+    if (f.eduType !== 'all') {
+      if (inst.institutionKind !== 'university') return false;
+      if (f.eduType === 'regular_bachelor') {
+        if (inst.educationLevel !== 'bachelor' || inst.educationType === 'vocational') return false;
+      } else if (f.eduType === 'vocational_bachelor') {
+        if (inst.educationLevel !== 'bachelor' || inst.educationType !== 'vocational') return false;
+      }
+    }
     // 机构级别
     if (f.level !== 'all' && inst.institutionLevel !== f.level) return false;
     // 科研体系（仅下属机构，口径见上方说明）
@@ -180,6 +232,15 @@ export function computeInstitutionStats(list: AgriculturalInstitution[]): Instit
     verifiedWebsites: list.filter((i) => i.websiteStatus === 'verified').length,
     veterinaryRelated: list.filter((i) => hasField(i, isVeterinaryField)).length,
     cropAndPlantProtection: list.filter((i) => hasField(i, isCropOrPlantProtectionField)).length,
+    regularBachelorTotal: list.filter(
+      (i) =>
+        i.institutionKind === 'university' &&
+        i.educationLevel === 'bachelor' &&
+        i.educationType !== 'vocational',
+    ).length,
+    vocationalBachelorTotal: list.filter(
+      (i) => i.institutionKind === 'university' && i.educationType === 'vocational',
+    ).length,
   };
 }
 
@@ -268,4 +329,39 @@ export function computeSubTypeCounts(
     }
   }
   return counts;
+}
+
+/**
+ * 院校二级 chips 计数（InstitutionTypeTabs 的涉农分类/办学类型徽章用）。
+ * 基于传入列表（通常为全量院校），与 filterInstitutions 的判定口径一致。
+ */
+export interface UniversityChipCounts {
+  categories: Record<UniversityCategory, number>;
+  regularBachelor: number;
+  vocationalBachelor: number;
+}
+
+export function computeUniversityChipCounts(
+  list: AgriculturalInstitution[],
+): UniversityChipCounts {
+  const universities = list.filter((i) => i.institutionKind === 'university');
+  const categories: Record<UniversityCategory, number> = {
+    agriculture: 0,
+    forestry: 0,
+    aquatic: 0,
+    animal_husbandry: 0,
+    agricultural_engineering: 0,
+    agriculture_featured_comprehensive: 0,
+  };
+  let regularBachelor = 0;
+  let vocationalBachelor = 0;
+  for (const inst of universities) {
+    for (const cat of inst.universityCategory ?? []) categories[cat] += 1;
+    if (inst.educationLevel === 'bachelor' && inst.educationType === 'vocational') {
+      vocationalBachelor += 1;
+    } else if (inst.educationLevel === 'bachelor') {
+      regularBachelor += 1;
+    }
+  }
+  return { categories, regularBachelor, vocationalBachelor };
 }
