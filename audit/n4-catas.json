@@ -1,0 +1,164 @@
+{
+  "academy": "中国热带农业科学院",
+  "academyId": "catas",
+  "rosterUrl": "https://www.catas.cn/rczjk/channels/1841.html",
+  "auditDate": "2026-09-30",
+  "rosterTotal": 14,
+  "units": [
+    {
+      "name": "中国热带农业科学院热带作物品种资源研究所",
+      "shortName": "品资所",
+      "unitType": "institute",
+      "city": "海口",
+      "sameCity": true,
+      "url": null,
+      "fields": ["热带作物种质资源", "遗传育种", "牧草与热带果树"],
+      "classification": "include",
+      "reason": "独立法人研究所，热带作物种质资源收集保存与育种核心单位，位于海口院部"
+    },
+    {
+      "name": "中国热带农业科学院橡胶研究所",
+      "shortName": "橡胶所",
+      "unitType": "institute",
+      "city": "儋州",
+      "sameCity": false,
+      "url": null,
+      "fields": ["天然橡胶育种", "橡胶树栽培生理", "采胶与加工技术"],
+      "classification": "include",
+      "reason": "独立研究所，我国天然橡胶科技核心单位，位于儋州院区"
+    },
+    {
+      "name": "中国热带农业科学院香料饮料研究所",
+      "shortName": "香饮所",
+      "unitType": "institute",
+      "city": "万宁",
+      "sameCity": false,
+      "url": null,
+      "fields": ["胡椒与香料作物", "咖啡与可可", "香草兰与热带饮料作物"],
+      "classification": "include",
+      "reason": "独立研究所，从事热带香料饮料作物产业化配套技术研究，位于万宁兴隆"
+    },
+    {
+      "name": "中国热带农业科学院南亚热带作物研究所",
+      "shortName": "南亚所",
+      "unitType": "institute",
+      "city": "湛江",
+      "sameCity": false,
+      "url": null,
+      "fields": ["南亚热带果树（菠萝、芒果、澳洲坚果）", "剑麻与甘蔗", "采后保鲜"],
+      "classification": "include",
+      "reason": "独立研究所，我国唯一南亚热带作物国家级科研机构，位于广东湛江（原湛江实验站已并入）"
+    },
+    {
+      "name": "中国热带农业科学院农产品加工研究所",
+      "shortName": "加工所",
+      "unitType": "institute",
+      "city": "湛江",
+      "sameCity": false,
+      "url": null,
+      "fields": ["热带农产品加工", "食品科学与工程", "天然产物利用"],
+      "classification": "include",
+      "reason": "独立研究所，热带农产品贮藏加工与食品科学，位于湛江"
+    },
+    {
+      "name": "中国热带农业科学院热带生物技术研究所",
+      "shortName": "生物所",
+      "unitType": "institute",
+      "city": "海口",
+      "sameCity": true,
+      "url": "https://www.catasitbb.cn",
+      "fields": ["热带作物生物育种", "功能基因组学", "热带微生物与海洋生物资源"],
+      "classification": "include",
+      "reason": "独立研究所，热带作物生物育种全国重点实验室依托单位，位于海口"
+    },
+    {
+      "name": "中国热带农业科学院环境与植物保护研究所",
+      "shortName": "环植所",
+      "unitType": "institute",
+      "city": "海口",
+      "sameCity": true,
+      "url": null,
+      "fields": ["热带植物保护", "农业生态环境", "入侵生物防控"],
+      "classification": "include",
+      "reason": "独立研究所，热带农业环境与植物保护研究，位于海口"
+    },
+    {
+      "name": "中国热带农业科学院椰子研究所",
+      "shortName": "椰子所",
+      "unitType": "institute",
+      "city": "文昌",
+      "sameCity": false,
+      "url": null,
+      "fields": ["椰子与油棕", "热带棕榈作物育种", "椰子加工"],
+      "classification": "include",
+      "reason": "独立研究所，椰子等热带棕榈作物研究，位于文昌"
+    },
+    {
+      "name": "中国热带农业科学院农业机械研究所",
+      "shortName": "农机所",
+      "unitType": "institute",
+      "city": "湛江",
+      "sameCity": false,
+      "url": null,
+      "fields": ["热带农业机械", "农产品加工装备", "智能农机装备"],
+      "classification": "include",
+      "reason": "独立研究所，热带农业机械化装备研究，位于湛江"
+    },
+    {
+      "name": "中国热带农业科学院科技信息研究所",
+      "shortName": "信息所",
+      "unitType": "institute",
+      "city": "海口",
+      "sameCity": true,
+      "url": null,
+      "fields": ["农业科技信息", "热带农业经济与政策", "期刊出版与情报研究"],
+      "classification": "include",
+      "reason": "独立研究所，科技信息、农业经济与期刊出版研究，位于海口"
+    },
+    {
+      "name": "中国热带农业科学院分析测试中心",
+      "shortName": "分析测试中心",
+      "unitType": "research_center",
+      "city": "海口",
+      "sameCity": true,
+      "url": null,
+      "fields": ["农产品质量安全检测", "分析测试服务"],
+      "classification": "review",
+      "reason": "列入决算编报单位的直属单位，但以检测服务为主、建制为'中心'，是否按独立科研单位收录需复核"
+    },
+    {
+      "name": "中国热带农业科学院海口实验站",
+      "shortName": "海口实验站",
+      "unitType": "institute",
+      "city": "海口",
+      "sameCity": true,
+      "url": null,
+      "fields": ["试验示范基地管理"],
+      "classification": "exclude",
+      "reason": "实验站，按规则默认不收录"
+    },
+    {
+      "name": "中国热带农业科学院湛江实验站",
+      "shortName": "湛江实验站",
+      "unitType": "institute",
+      "city": "湛江",
+      "sameCity": false,
+      "url": null,
+      "fields": ["试验示范基地管理"],
+      "classification": "exclude",
+      "reason": "实验站，按规则默认不收录（注：有资料称 2017 年已并入南亚所，官网名单仍单列，需复核）"
+    },
+    {
+      "name": "中国热带农业科学院广州实验站",
+      "shortName": "广州实验站",
+      "unitType": "institute",
+      "city": "广州",
+      "sameCity": false,
+      "url": null,
+      "fields": ["试验示范基地管理"],
+      "classification": "exclude",
+      "reason": "实验站，按规则默认不收录"
+    }
+  ],
+  "counts": { "include": 10, "review": 1, "exclude": 3 }
+}
