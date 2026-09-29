@@ -29,8 +29,8 @@ export default function AboutSection() {
               收录范围
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-agri-text sm:text-base">
-              本平台收录 25 所农业院校（含具有涉农办学特色的综合性大学）、中国农业科学院等 4 个国家级科研总院、14 个国家级专业研究所，
-              以及 30 个省级农科机构（含省级综合农科院与省级专业研究所），共计 73 家机构。
+              本平台收录 53 所农业院校（含林业、水产类院校与具有涉农办学特色的综合性大学）、中国农业科学院等 4 个国家级科研总院、14 个国家级专业研究所，
+              以及 30 个省级农科机构（含省级综合农科院与省级专业研究所），共计 101 家机构。
             </p>
             <p className="mt-2 text-sm leading-relaxed text-agri-text sm:text-base">
               特别说明：陕西省无独立建制的省级农业科学院，原陕西省农业科学院于 1999 年并入西北农林科技大学，
