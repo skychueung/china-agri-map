@@ -1,5 +1,6 @@
 // ==========================================================================
-// 农业院校数据（24 所，自 V1 已核实数据迁移）
+// 农业院校数据（V1 基础 25 所 + 2026-09-30 补录 28 所 = 53 所）
+// 补录批次见 universitiesBatch2026A.ts / universitiesBatch2026B.ts，本文件末尾统一合并导出。
 // 迁移规则：
 //   - institutionKind 统一 'university'
 //   - 教育部直属 4 所（中国农大/南京农大/华中农大/西北农林）institutionLevel='national'，其余 'provincial'
@@ -9,6 +10,8 @@
 //   - 已核实内容（名称/官网/坐标/简介等）照搬，未作改动
 // ==========================================================================
 import type { AgriculturalInstitution } from '../types/institution';
+import { universitiesBatch2026A } from './universitiesBatch2026A';
+import { universitiesBatch2026B } from './universitiesBatch2026B';
 
 const PLACEHOLDER_IMAGE = {
   logo: 'placeholders/logo.svg',
@@ -18,7 +21,7 @@ const PLACEHOLDER_IMAGE = {
 
 const V1_DATA_SOURCE = 'V1 阶段核查（2026-07-18）核实官网/地址/坐标，来源详见 locationSource';
 
-export const universities: AgriculturalInstitution[] = [
+const baseUniversities: AgriculturalInstitution[] = [
   {
     id: 'china-agricultural-university',
     name: '中国农业大学',
@@ -583,4 +586,12 @@ export const universities: AgriculturalInstitution[] = [
     dataSource: V1_DATA_SOURCE,
     lastVerifiedAt: '2026-07-19',
   },
+];
+
+// ===== 2026-09-30 补录批次（28 所）：林业/水产/农业本科/涉农综合大学 =====
+// 明细见 universitiesBatch2026A.ts（15 所）与 universitiesBatch2026B.ts（13 所）
+export const universities: AgriculturalInstitution[] = [
+  ...baseUniversities,
+  ...universitiesBatch2026A,
+  ...universitiesBatch2026B,
 ];
