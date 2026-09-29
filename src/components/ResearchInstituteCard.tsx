@@ -11,8 +11,8 @@ import type {
   InstitutionLevel,
 } from '../types/institution';
 
-const LOGO_PLACEHOLDER = '/placeholders/logo.svg';
-const CAMPUS_PLACEHOLDER = '/placeholders/campus.svg';
+const LOGO_PLACEHOLDER = 'placeholders/logo.svg';
+const CAMPUS_PLACEHOLDER = 'placeholders/campus.svg';
 
 const LEVEL_LABEL: Record<InstitutionLevel, string> = {
   national: '国家级',
