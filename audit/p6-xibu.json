@@ -1,0 +1,166 @@
+{
+  "group": "P6-西部",
+  "auditDate": "2026-09-30",
+  "shaanxiNote": "截至2026年，陕西省仍无独立建制的省级农业科学院。原陕西省农业科学院已于1999年9月与西北农业大学、西北林学院、中国科学院水利部水土保持研究所、水利部西北水利科学研究所、陕西省林业科学院、陕西省中国科学院西北植物研究所共7家单位合并组建西北农林科技大学（教育部直属，位于杨凌示范区），实行部省院共建。陕西省层面农业科研职能主要由西北农林科技大学及杨凌示范区体系承担，另有陕西省畜牧、果业等行业研究机构分属省农业农村厅等部门，但无'陕西省农业科学院'实体。依据：西北农林科技大学官网校史及2022年度部门决算公开文件。",
+  "academies": [
+    {
+      "academy": "贵州省农业科学院",
+      "academyId": "guizhou-academy-of-agricultural-sciences",
+      "rosterUrl": "http://aas.guizhou.gov.cn/xxgk/zdlyxx/zjxx_5779425/202502/P020250325530917963217.pdf （官网机构设置栏目未直接列出，采用2025年部门预算公开'预算单位构成'名单交叉验证）",
+      "rosterTotal": 20,
+      "units": [
+        {"name":"贵州省农业科学院水稻研究所","unitType":"institute","city":"贵阳","sameCity":true,"url":null,"fields":["水稻遗传育种","杂交稻制种","栽培生理"],"classification":"include","reason":"预算公开列明的独立科研研究所"},
+        {"name":"贵州省农业科学院园艺研究所","unitType":"institute","city":"贵阳","sameCity":true,"url":null,"fields":["蔬菜","果树园艺","设施栽培"],"classification":"include","reason":"独立科研研究所"},
+        {"name":"贵州省农业科学院现代农业发展研究所","unitType":"institute","city":"贵阳","sameCity":true,"url":null,"fields":["农产品加工","农村经济","现代农业发展"],"classification":"include","reason":"独立科研研究所（加挂农产品加工研究所牌子）"},
+        {"name":"贵州省农业科学院旱粮研究所","unitType":"institute","city":"贵阳","sameCity":true,"url":"http://www.gzsnkyhlglyjs.cn","fields":["玉米","高粱","杂粮麦类"],"classification":"include","reason":"独立科研研究所（加挂高粱研究所牌子）"},
+        {"name":"贵州省农业科学院油料研究所","unitType":"institute","city":"贵阳","sameCity":true,"url":null,"fields":["油料作物","香料作物"],"classification":"include","reason":"独立科研研究所"},
+        {"name":"贵州省农业科学院植物保护研究所","unitType":"institute","city":"贵阳","sameCity":true,"url":null,"fields":["农作物病虫害","农药质量检测","绿色防控"],"classification":"include","reason":"独立科研研究所"},
+        {"name":"贵州省农业科学院土壤肥料研究所","unitType":"institute","city":"贵阳","sameCity":true,"url":null,"fields":["土壤肥料","农业资源环境","生态农业"],"classification":"include","reason":"独立科研研究所"},
+        {"name":"贵州省农业科学院农业科技信息研究所","unitType":"institute","city":"贵阳","sameCity":true,"url":"http://www.gziasti.cn","fields":["农业科技信息","期刊出版","农业信息化"],"classification":"include","reason":"独立科研研究所"},
+        {"name":"贵州省农业科学院生物技术研究所","unitType":"institute","city":"贵阳","sameCity":true,"url":null,"fields":["马铃薯","生物技术育种","分子生物学"],"classification":"include","reason":"独立科研研究所（加挂马铃薯研究所牌子）"},
+        {"name":"贵州省农业科学院水产研究所","unitType":"institute","city":"贵阳","sameCity":true,"url":null,"fields":["水产养殖","特种水产","鱼病防治"],"classification":"include","reason":"独立科研研究所"},
+        {"name":"贵州省农业科学院畜牧兽医研究所","unitType":"institute","city":"贵阳","sameCity":true,"url":null,"fields":["畜牧育种","动物疫病","饲料"],"classification":"include","reason":"独立科研研究所"},
+        {"name":"贵州省农业科学院果树科学研究所","unitType":"institute","city":"贵阳","sameCity":true,"url":null,"fields":["果树","火龙果","柑橘"],"classification":"include","reason":"独立科研研究所"},
+        {"name":"贵州省农业科学院草业研究所","unitType":"institute","city":"贵阳","sameCity":true,"url":null,"fields":["牧草育种","草业工程","草地生态"],"classification":"include","reason":"独立科研研究所"},
+        {"name":"贵州省农业科学院亚热带作物研究所","unitType":"institute","city":"兴义","sameCity":false,"url":null,"fields":["南亚热带作物","生物质能源","热区果树"],"classification":"include","reason":"独立科研研究所，驻黔西南州兴义市"},
+        {"name":"贵州省农业科学院蚕业研究所","unitType":"institute","city":"遵义","sameCity":false,"url":"http://www.gzscyyjs.cn","fields":["蚕桑","辣椒育种栽培","桑树资源"],"classification":"include","reason":"独立科研研究所（加挂辣椒研究所牌子），驻遵义"},
+        {"name":"贵州省农业科学院茶叶研究所","unitType":"institute","city":"遵义","sameCity":false,"url":null,"fields":["茶树育种栽培","茶叶加工","茶叶质检"],"classification":"include","reason":"独立科研研究所，主要基地在湄潭"},
+        {"name":"贵州省农业科学院油菜研究所","unitType":"institute","city":"贵阳","sameCity":true,"url":null,"fields":["油菜育种","油菜改良","油料栽培"],"classification":"include","reason":"独立科研研究所"},
+        {"name":"贵州省农业科学院农作物品种资源研究所","unitType":"institute","city":"贵阳","sameCity":true,"url":null,"fields":["种质资源","中药材","品种区域试验"],"classification":"include","reason":"独立科研研究所（加挂现代中药材研究所牌子）"},
+        {"name":"贵州省农业科学院职工医院","unitType":"institute","city":"贵阳","sameCity":true,"url":null,"fields":[],"classification":"exclude","reason":"后勤/医疗服务单位，非科研机构"},
+        {"name":"贵州省农业科学院附属中学","unitType":"institute","city":"贵阳","sameCity":true,"url":null,"fields":[],"classification":"exclude","reason":"教育附属单位，非科研机构"}
+      ],
+      "counts": {"include":18,"review":0,"exclude":2}
+    },
+    {
+      "academy": "云南省农业科学院",
+      "academyId": "yunnan-academy-of-agricultural-sciences",
+      "rosterUrl": "https://yunnan.agriir.cn/ （院机构知识库列出院属研究所；名单与维基百科及各所预算公开交叉验证）",
+      "rosterTotal": 18,
+      "units": [
+        {"name":"云南省农业科学院粮食作物研究所","unitType":"institute","city":"昆明","sameCity":true,"url":null,"fields":["稻作","玉米","麦类豆类"],"classification":"include","reason":"院属专业研究所"},
+        {"name":"云南省农业科学院园艺作物研究所","unitType":"institute","city":"昆明","sameCity":true,"url":null,"fields":["果树","蔬菜","园艺种苗"],"classification":"include","reason":"院属专业研究所"},
+        {"name":"云南省农业科学院农业经济与信息研究所","unitType":"institute","city":"昆明","sameCity":true,"url":null,"fields":["农业经济","农业信息","期刊编辑"],"classification":"include","reason":"院属专业研究所"},
+        {"name":"云南省农业科学院经济作物研究所","unitType":"institute","city":"昆明","sameCity":true,"url":null,"fields":["油料","棉花麻类","特色经济作物"],"classification":"include","reason":"院属专业研究所"},
+        {"name":"云南省农业科学院生物技术与种质资源研究所","unitType":"institute","city":"昆明","sameCity":true,"url":"http://www.ybri.cn","fields":["生物技术","种质资源","分子育种"],"classification":"include","reason":"院属专业研究所"},
+        {"name":"云南省农业科学院花卉研究所","unitType":"institute","city":"昆明","sameCity":true,"url":"http://www.ynflower.org","fields":["花卉育种","种苗繁育","采后技术"],"classification":"include","reason":"院属专业研究所"},
+        {"name":"云南省农业科学院农业环境资源研究所","unitType":"institute","city":"昆明","sameCity":true,"url":"http://www.iaer.cn","fields":["植物保护","土壤肥料","农业环境"],"classification":"include","reason":"院属专业研究所"},
+        {"name":"云南省农业科学院质量标准与检测技术研究所","unitType":"institute","city":"昆明","sameCity":true,"url":null,"fields":["农产品质量标准","检测技术","质量安全"],"classification":"include","reason":"院属专业研究所"},
+        {"name":"云南省农业科学院农产品加工研究所","unitType":"institute","city":"昆明","sameCity":true,"url":null,"fields":["农产品加工","贮藏保鲜","食品科学"],"classification":"include","reason":"院属专业研究所"},
+        {"name":"云南省农业科学院国际农业研究所","unitType":"institute","city":"昆明","sameCity":true,"url":null,"fields":["国际农业合作","跨境农业","农业科技交流"],"classification":"include","reason":"院属专业研究所"},
+        {"name":"云南省农业科学院茶叶研究所","unitType":"institute","city":"勐海","sameCity":false,"url":null,"fields":["茶树育种","茶叶加工","普洱茶"],"classification":"include","reason":"院属专业研究所，驻西双版纳勐海"},
+        {"name":"云南省农业科学院热带亚热带经济作物研究所","unitType":"institute","city":"保山","sameCity":false,"url":null,"fields":["热带经济作物","咖啡","热区果树"],"classification":"include","reason":"院属专业研究所，驻保山"},
+        {"name":"云南省农业科学院高山经济植物研究所","unitType":"institute","city":"丽江","sameCity":false,"url":null,"fields":["高山经济植物","药用植物","高寒作物"],"classification":"include","reason":"院属专业研究所，驻丽江"},
+        {"name":"云南省农业科学院热区生态农业研究所","unitType":"institute","city":"元谋","sameCity":false,"url":null,"fields":["热区生态农业","干热河谷","节水农业"],"classification":"include","reason":"院属专业研究所，驻楚雄元谋"},
+        {"name":"云南省农业科学院蚕桑蜜蜂研究所","unitType":"institute","city":"昆明","sameCity":true,"url":"https://www.ynbb.org.cn","fields":["蚕桑","蜜蜂与授粉昆虫","资源昆虫"],"classification":"include","reason":"院属专业研究所（驻地以昆明为主，设弥勒基地，驻地信息待复核）"},
+        {"name":"云南省农业科学院甘蔗研究所","unitType":"institute","city":"开远","sameCity":false,"url":"https://www.yngzs.net","fields":["甘蔗育种","糖料作物","蔗区农艺"],"classification":"include","reason":"院属专业研究所，驻红河开远"},
+        {"name":"云南省农业科学院药用植物研究所","unitType":"institute","city":"昆明","sameCity":true,"url":null,"fields":["药用植物","中药材资源","林下经济"],"classification":"include","reason":"院属专业研究所"},
+        {"name":"云南热带作物信息服务平台","unitType":"research_center","city":"昆明","sameCity":true,"url":null,"fields":["信息服务"],"classification":"review","reason":"平台性质，是否独立建制事业单位不清"}
+      ],
+      "counts": {"include":17,"review":1,"exclude":0}
+    },
+    {
+      "academy": "西藏自治区农牧科学院",
+      "academyId": "tibet-academy-of-agricultural-and-animal-husbandry-sciences",
+      "rosterUrl": "https://www.xzaas.cn/ （官网'院属单位'栏目，与2026年各所部门预算及2024年高层次人才引进公告交叉验证）",
+      "rosterTotal": 8,
+      "units": [
+        {"name":"西藏自治区农牧科学院农业研究所","unitType":"institute","city":"拉萨","sameCity":true,"url":null,"fields":["青稞","小麦","作物种质资源"],"classification":"include","reason":"官网院属单位及2026年部门预算确认"},
+        {"name":"西藏自治区农牧科学院畜牧兽医研究所","unitType":"institute","city":"拉萨","sameCity":true,"url":null,"fields":["畜禽遗传育种","动物疫病防控","高原畜牧"],"classification":"include","reason":"官网院属单位及2026年部门预算确认"},
+        {"name":"西藏自治区农牧科学院蔬菜研究所","unitType":"institute","city":"拉萨","sameCity":true,"url":null,"fields":["蔬菜育种栽培","花卉","高原设施农业"],"classification":"include","reason":"官网院属单位及2026年部门预算确认"},
+        {"name":"西藏自治区农牧科学院农业质量标准与检测研究所","unitType":"institute","city":"拉萨","sameCity":true,"url":null,"fields":["农产品质量标准","质量检测","风险评估"],"classification":"include","reason":"官网院属单位，名称亦见招聘公告"},
+        {"name":"西藏自治区农牧科学院农业资源与环境研究所","unitType":"institute","city":"拉萨","sameCity":true,"url":null,"fields":["土壤肥料","农业生态","资源环境"],"classification":"include","reason":"官网院属单位"},
+        {"name":"西藏自治区农牧科学院草业科学研究所","unitType":"institute","city":"拉萨","sameCity":true,"url":null,"fields":["牧草育种","草原生态","草业技术"],"classification":"include","reason":"官网院属单位"},
+        {"name":"西藏自治区农牧科学院水产科学研究所","unitType":"institute","city":"拉萨","sameCity":true,"url":null,"fields":["水产种质资源","高原渔业","鱼病防治"],"classification":"include","reason":"官网院属单位及2026年部门预算确认"},
+        {"name":"西藏自治区农牧科学院农产品开发与食品科学研究所","unitType":"institute","city":"拉萨","sameCity":true,"url":null,"fields":["农产品加工","食品科学","高原特色食品"],"classification":"include","reason":"官网院属单位（部分文献作'农产品加工与食品科学研究所'）"}
+      ],
+      "counts": {"include":8,"review":0,"exclude":0}
+    },
+    {
+      "academy": "甘肃省农业科学院",
+      "academyId": "gansu-academy-of-agricultural-sciences",
+      "rosterUrl": "http://czt.gansu.gov.cn/czt/c110120/202408/173971157/files/e79bd0d47c224cf78e3268a0c8338459.pdf （2023年部门决算公开：13个研究所+3个试验站；与院官网 gsagr.cn 交叉验证）",
+      "rosterTotal": 16,
+      "units": [
+        {"name":"甘肃省农业科学院作物研究所","unitType":"institute","city":"兰州","sameCity":true,"url":null,"fields":["粮食作物育种","经济作物","栽培技术"],"classification":"include","reason":"决算公开列明的研究所"},
+        {"name":"甘肃省农业科学院土壤肥料与节水农业研究所","unitType":"institute","city":"兰州","sameCity":true,"url":null,"fields":["土壤肥料","节水农业","水肥一体化"],"classification":"include","reason":"决算公开列明的研究所"},
+        {"name":"甘肃省农业科学院马铃薯研究所","unitType":"institute","city":"兰州","sameCity":true,"url":null,"fields":["马铃薯育种","种薯繁育","马铃薯栽培"],"classification":"include","reason":"决算公开列明的研究所"},
+        {"name":"甘肃省农业科学院植物保护研究所","unitType":"institute","city":"兰州","sameCity":true,"url":"https://zbs.gsagr.cn","fields":["病虫草鼠害","综合防治","农药"],"classification":"include","reason":"决算公开列明的研究所"},
+        {"name":"甘肃省农业科学院旱地农业研究所","unitType":"institute","city":"兰州","sameCity":true,"url":null,"fields":["旱作农业","抗旱育种","旱区生态"],"classification":"include","reason":"决算公开列明的研究所"},
+        {"name":"甘肃省农业科学院林果花卉研究所","unitType":"institute","city":"兰州","sameCity":true,"url":null,"fields":["林果育种","花卉","种苗扩繁"],"classification":"include","reason":"决算公开列明的研究所"},
+        {"name":"甘肃省农业科学院农业经济与信息研究所","unitType":"institute","city":"兰州","sameCity":true,"url":null,"fields":["农业经济","农业信息化","工程咨询"],"classification":"include","reason":"决算公开列明的研究所"},
+        {"name":"甘肃省农业科学院蔬菜研究所","unitType":"institute","city":"兰州","sameCity":true,"url":null,"fields":["蔬菜育种","设施农业","蔬菜栽培"],"classification":"include","reason":"决算公开列明的研究所"},
+        {"name":"甘肃省农业科学院生物技术研究所","unitType":"institute","city":"兰州","sameCity":true,"url":null,"fields":["农业生物技术","分子育种","组织培养"],"classification":"include","reason":"决算公开列明的研究所"},
+        {"name":"甘肃省农业科学院农产品贮藏加工研究所","unitType":"institute","city":"兰州","sameCity":true,"url":null,"fields":["农产品贮藏","加工技术","冷链保鲜"],"classification":"include","reason":"决算公开列明的研究所"},
+        {"name":"甘肃省农业科学院畜草与绿色农业研究所","unitType":"institute","city":"兰州","sameCity":true,"url":null,"fields":["畜牧","草业","农产品质量检测"],"classification":"include","reason":"决算公开列明的研究所（加挂农业质量标准与检测技术研究所牌子，一套班子）"},
+        {"name":"甘肃省农业科学院经济作物与啤酒原料研究所","unitType":"institute","city":"兰州","sameCity":true,"url":null,"fields":["啤酒大麦","中药材","经济作物"],"classification":"include","reason":"决算公开列明的研究所（加挂中药材研究所牌子）"},
+        {"name":"甘肃省农业科学院小麦研究所","unitType":"institute","city":"兰州","sameCity":true,"url":null,"fields":["小麦育种","麦类栽培","种质创新"],"classification":"include","reason":"决算公开列明的研究所"},
+        {"name":"甘肃省农业科学院张掖节水农业试验站","unitType":"institute","city":"张掖","sameCity":false,"url":null,"fields":[],"classification":"exclude","reason":"试验站，按规则排除"},
+        {"name":"甘肃省农业科学院榆中高寒农业试验站","unitType":"institute","city":"兰州","sameCity":true,"url":null,"fields":[],"classification":"exclude","reason":"试验站，按规则排除"},
+        {"name":"甘肃省农业科学院黄羊麦类作物育种试验站","unitType":"institute","city":"武威","sameCity":false,"url":null,"fields":[],"classification":"exclude","reason":"试验站，按规则排除"}
+      ],
+      "counts": {"include":13,"review":0,"exclude":3}
+    },
+    {
+      "academy": "青海省农林科学院",
+      "academyId": "qinghai-academy-of-agriculture-and-forestry-sciences",
+      "rosterUrl": "https://nky.qhu.edu.cn/pub/nlkxy/docs//2025-02/d9fe073e9d2a4d0f8bab61d3ea1d42c3.pdf （青海大学农林科学院2025年单位预算，含'三定方案'8个专业研究所名单）",
+      "rosterTotal": 8,
+      "units": [
+        {"name":"青海省农林科学院作物育种栽培研究所","unitType":"institute","city":"西宁","sameCity":true,"url":null,"fields":["小麦青稞育种","蚕豆豌豆","旱地农业"],"classification":"include","reason":"三定方案列明的专业研究所（含旱地农业研究所）"},
+        {"name":"青海省农林科学院植物保护研究所","unitType":"institute","city":"西宁","sameCity":true,"url":null,"fields":["作物病害","农业昆虫","生物防治"],"classification":"include","reason":"三定方案列明的专业研究所"},
+        {"name":"青海省农林科学院园艺研究所","unitType":"institute","city":"西宁","sameCity":true,"url":null,"fields":["蔬菜育种","设施栽培","蔬菜生理"],"classification":"include","reason":"三定方案列明的专业研究所"},
+        {"name":"青海省农林科学院土壤肥料研究所","unitType":"institute","city":"西宁","sameCity":true,"url":null,"fields":["土壤肥料","植物营养","耕地质量"],"classification":"include","reason":"三定方案列明的专业研究所"},
+        {"name":"青海省农林科学院林业科学研究所","unitType":"institute","city":"西宁","sameCity":true,"url":null,"fields":["高原林木育种","荒漠化治理","城市林业"],"classification":"include","reason":"三定方案列明的专业研究所"},
+        {"name":"青海省农林科学院春油菜研究所","unitType":"institute","city":"西宁","sameCity":true,"url":null,"fields":["春油菜育种","油菜遗传改良","油料栽培"],"classification":"include","reason":"三定方案列明的专业研究所"},
+        {"name":"青海省农林科学院生物技术研究所","unitType":"institute","city":"西宁","sameCity":true,"url":null,"fields":["马铃薯脱毒","植物组织培养","分子生物学"],"classification":"include","reason":"三定方案列明的专业研究所"},
+        {"name":"青海省农林科学院青藏高原野生植物资源研究所","unitType":"institute","city":"西宁","sameCity":true,"url":null,"fields":["野生植物资源","食用菌","天然产物"],"classification":"include","reason":"三定方案列明的专业研究所"}
+      ],
+      "counts": {"include":8,"review":0,"exclude":0}
+    },
+    {
+      "academy": "宁夏农林科学院",
+      "academyId": "ningxia-academy-of-agriculture-and-forestry-sciences",
+      "rosterUrl": "https://www.nxaas.com.cn/zwgk/zfxxgkml/bmcwgk/202502/W020250220350820869145.pdf （宁夏农林科学院2025年部门预算，二级预算单位名单）",
+      "rosterTotal": 12,
+      "units": [
+        {"name":"宁夏农林科学院动物科学研究所","unitType":"institute","city":"银川","sameCity":true,"url":null,"fields":["动物育种","草畜工程","饲料营养"],"classification":"include","reason":"2025年部门预算列明的科研事业单位（宁夏草畜工程技术研究中心）"},
+        {"name":"宁夏农林科学院枸杞科学研究所","unitType":"institute","city":"银川","sameCity":true,"url":null,"fields":["枸杞育种","枸杞栽培","枸杞加工"],"classification":"include","reason":"2025年部门预算列明的科研事业单位"},
+        {"name":"宁夏农林科学院林业与草地生态研究所","unitType":"institute","city":"银川","sameCity":true,"url":null,"fields":["防沙治沙","林草生态修复","药用植物"],"classification":"include","reason":"2025年部门预算列明的科研事业单位（原荒漠化治理研究所，2022年更名）"},
+        {"name":"宁夏农林科学院农业生物技术研究中心","unitType":"research_center","city":"银川","sameCity":true,"url":null,"fields":["植物分子生物学","生物技术育种","农业微生物"],"classification":"include","reason":"正处级科研事业单位（宁夏农业生物技术重点实验室）"},
+        {"name":"宁夏农林科学院农业经济与信息技术研究所","unitType":"institute","city":"银川","sameCity":true,"url":null,"fields":["农业经济","农业信息技术","科技文献"],"classification":"include","reason":"2025年部门预算列明的科研事业单位"},
+        {"name":"宁夏农林科学院植物保护研究所","unitType":"institute","city":"银川","sameCity":true,"url":null,"fields":["植物病害","农林害虫","生物农药"],"classification":"include","reason":"2025年部门预算列明的科研事业单位"},
+        {"name":"宁夏农产品质量标准与检测技术研究所","unitType":"institute","city":"银川","sameCity":true,"url":null,"fields":["农产品质量检测","质量标准","风险监测"],"classification":"include","reason":"2025年部门预算列明的科研事业单位（宁夏农产品质量监测中心）"},
+        {"name":"宁夏农林科学院园艺研究所","unitType":"institute","city":"银川","sameCity":true,"url":null,"fields":["果树","蔬菜西甜瓜","酿酒葡萄"],"classification":"include","reason":"2025年部门预算列明的科研事业单位（原种质资源研究所，2020年更名）"},
+        {"name":"宁夏农林科学院农业资源与环境研究所","unitType":"institute","city":"银川","sameCity":true,"url":null,"fields":["土壤与植物营养","农业环境","资源利用"],"classification":"include","reason":"2025年部门预算列明的科研事业单位"},
+        {"name":"宁夏农林科学院农作物研究所","unitType":"institute","city":"银川","sameCity":true,"url":null,"fields":["农作物育种","水稻小麦","品种选育"],"classification":"include","reason":"2025年部门预算列明的科研事业单位（自治区农作物育种中心）"},
+        {"name":"宁夏农林科学院固原分院","unitType":"institute","city":"固原","sameCity":false,"url":null,"fields":["旱作农业","马铃薯","冷凉蔬菜"],"classification":"review","reason":"分院建制，正处级事业单位且下设5个研究中心，介于研究所与派出机构之间"},
+        {"name":"宁夏农林科学院服务中心","unitType":"institute","city":"银川","sameCity":true,"url":null,"fields":[],"classification":"exclude","reason":"后勤服务单位，非科研机构"}
+      ],
+      "counts": {"include":10,"review":1,"exclude":1}
+    },
+    {
+      "academy": "新疆农业科学院",
+      "academyId": "xinjiang-academy-of-agricultural-sciences",
+      "rosterUrl": "https://rst.xinjiang.gov.cn/xjrst/c112746/202502/7f73868a75bf44c6a878b3ca6f4cdf43.shtml （2025年引进高层次人才公告列明14个科研机构；与2024年部门预算公开交叉验证，机构近年有整合更名）",
+      "rosterTotal": 14,
+      "units": [
+        {"name":"新疆农业科学院作物研究所","unitType":"institute","city":"乌鲁木齐","sameCity":true,"url":null,"fields":["粮食作物育种","作物栽培","种质创新"],"classification":"include","reason":"2025年公告列明的科研机构（原粮食作物研究所等整合）"},
+        {"name":"新疆农业科学院棉花研究所","unitType":"institute","city":"乌鲁木齐","sameCity":true,"url":null,"fields":["棉花育种","棉花栽培","棉种资源"],"classification":"include","reason":"2025年公告列明的科研机构"},
+        {"name":"新疆农业科学院果蔬研究所","unitType":"institute","city":"乌鲁木齐","sameCity":true,"url":null,"fields":["果树","蔬菜","西甜瓜"],"classification":"include","reason":"2025年公告列明的科研机构（原园艺作物研究所等整合）"},
+        {"name":"新疆农业科学院农业资源与环境研究所","unitType":"institute","city":"乌鲁木齐","sameCity":true,"url":null,"fields":["土壤肥料","农业节水","农业环境"],"classification":"include","reason":"2025年公告列明的科研机构（原土壤肥料与农业节水研究所）"},
+        {"name":"新疆农业科学院植物保护研究所","unitType":"institute","city":"乌鲁木齐","sameCity":true,"url":null,"fields":["农林有害生物","生物安全","农药安全"],"classification":"include","reason":"2025年公告列明的科研机构"},
+        {"name":"新疆农业科学院微生物研究所","unitType":"institute","city":"乌鲁木齐","sameCity":true,"url":null,"fields":["农业微生物","微生物资源","发酵工程"],"classification":"include","reason":"2025年公告列明的科研机构（原微生物应用研究所）"},
+        {"name":"新疆农业科学院农产品加工研究所","unitType":"institute","city":"乌鲁木齐","sameCity":true,"url":null,"fields":["农产品加工","贮藏保鲜","食品加工"],"classification":"include","reason":"2025年公告列明的科研机构"},
+        {"name":"新疆农业科学院农业装备研究所","unitType":"institute","city":"乌鲁木齐","sameCity":true,"url":null,"fields":["农牧机械","设施农业装备","加工装备"],"classification":"include","reason":"2025年公告列明的科研机构（原农业机械化研究所）"},
+        {"name":"新疆农业科学院农业质量标准与检测研究所","unitType":"institute","city":"乌鲁木齐","sameCity":true,"url":null,"fields":["农产品质量安全","检测技术","营养品质评价"],"classification":"include","reason":"2025年公告列明的科研机构"},
+        {"name":"新疆农业科学院农业经济与信息研究所","unitType":"institute","city":"乌鲁木齐","sameCity":true,"url":null,"fields":["农业经济","科技信息","期刊编辑"],"classification":"include","reason":"2025年公告列明的科研机构"},
+        {"name":"新疆农业科学院生物育种实验室","unitType":"research_center","city":"乌鲁木齐","sameCity":true,"url":null,"fields":["生物育种","分子设计育种","基因编辑"],"classification":"review","reason":"以'实验室'名义列入科研机构序列，独立法人/建制状态不清"},
+        {"name":"新疆农业科学院乌鲁木齐综合试验站","unitType":"institute","city":"乌鲁木齐","sameCity":true,"url":null,"fields":[],"classification":"exclude","reason":"试验站，按规则排除"},
+        {"name":"新疆农业科学院吐鲁番试验站","unitType":"institute","city":"吐鲁番","sameCity":false,"url":null,"fields":[],"classification":"exclude","reason":"试验站，按规则排除（原吐鲁番农业科学研究所，2025年公告列为试验站）"},
+        {"name":"新疆农业科学院海南三亚育种站","unitType":"institute","city":"三亚","sameCity":false,"url":null,"fields":[],"classification":"exclude","reason":"南繁育种基地/试验站，按规则排除"}
+      ],
+      "counts": {"include":10,"review":1,"exclude":3}
+    }
+  ]
+}
