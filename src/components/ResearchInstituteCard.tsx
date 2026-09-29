@@ -9,6 +9,7 @@ import type {
   AgriculturalInstitution,
   InstitutionKind,
   InstitutionLevel,
+  ResearchUnitType,
 } from '../types/institution';
 
 const LOGO_PLACEHOLDER = 'placeholders/logo.svg';
@@ -32,6 +33,15 @@ const LEVEL_BADGE_CLASS: Record<InstitutionLevel, string> = {
 const KIND_LABEL: Partial<Record<InstitutionKind, string>> = {
   research_academy: '总院',
   research_institute: '专业所',
+};
+
+/** 单位类型标签：优先取 researchUnitType（研究所/研究中心/总院等），缺省回退 kind 标签 */
+const UNIT_TYPE_LABEL: Record<ResearchUnitType, string> = {
+  academy: '总院',
+  institute: '研究所',
+  research_center: '研究中心',
+  experimental_center: '试验中心',
+  support_unit: '支撑单位',
 };
 
 /** 图片加载失败兜底：回退到占位图，且避免占位图本身加载失败造成死循环 */
@@ -82,7 +92,9 @@ export function ResearchInstituteCard({
   const fields = researchFields ?? [];
   const visibleFields = fields.slice(0, 3);
   const extraCount = fields.length - visibleFields.length;
-  const kindLabel = KIND_LABEL[institutionKind];
+  const kindLabel = institute.researchUnitType
+    ? UNIT_TYPE_LABEL[institute.researchUnitType]
+    : KIND_LABEL[institutionKind];
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLElement>) => {
     if (e.key === 'Enter' || e.key === ' ') {
