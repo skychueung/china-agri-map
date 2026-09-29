@@ -1,9 +1,11 @@
 import {
   BadgeCheck,
   Beef,
+  BookOpen,
   Building,
   Building2,
   FlaskConical,
+  GraduationCap,
   Landmark,
   MapPin,
   Microscope,
@@ -29,6 +31,8 @@ interface StatCardDef {
 
 const STAT_CARDS: StatCardDef[] = [
   { label: '农业院校总数', value: 'universityTotal', icon: School, iconClass: 'text-agri-primary', bgClass: 'bg-agri-primary/10' },
+  { label: '普通本科院校', value: 'regularBachelorTotal', icon: GraduationCap, iconClass: 'text-agri-primary', bgClass: 'bg-agri-primary/10' },
+  { label: '职业本科院校', value: 'vocationalBachelorTotal', icon: BookOpen, iconClass: 'text-agri-secondary', bgClass: 'bg-agri-secondary/10' },
   { label: '科研机构总数', value: 'researchTotal', icon: FlaskConical, iconClass: 'text-agri-secondary', bgClass: 'bg-agri-secondary/10' },
   { label: '国家级科研总院', value: 'nationalAcademies', icon: Landmark, iconClass: 'text-agri-accent', bgClass: 'bg-agri-accent/15' },
   { label: '国家级专业研究所', value: 'nationalInstitutes', icon: Microscope, iconClass: 'text-[#E08A3C]', bgClass: 'bg-[#E08A3C]/10' },
