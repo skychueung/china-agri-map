@@ -4,7 +4,7 @@
 
 中国农业院校与科研院所地图导航平台：一个汇集全国农业院校与农业科研机构（国家级科研体系 + 省级农科院体系）的单页导航网站。通过中国地图直观展示机构地域分布，支持按地区、省份、机构类型、科研体系、研究领域筛选与关键词搜索，并提供各机构官方网站入口与科研体系层级浏览。
 
-当前收录 **101 个机构**：农业院校 53 所（含林业、水产类院校与涉农特色综合性大学）+ 农业科研机构 48 个（国家级总院 4、国家级专业所 14、省级农科院 30）。
+当前收录 **128 个机构**：农业院校 80 所（普通本科 75 + 职业本科 5，含林业、水产类院校与涉农特色综合性大学）+ 农业科研机构 48 个（国家级总院 4、国家级专业所 14、省级综合农科院 30）。
 
 ## 定位声明
 
@@ -41,11 +41,12 @@ app/
 │   ├── main.tsx / index.css          # 入口与全局样式
 │   ├── types/institution.ts          # AgriculturalInstitution / 筛选 / 统计类型定义
 │   ├── data/
-│   │   ├── universities.ts           # ★ 农业院校数据（53 所：V1 基础 25 + 2026-09-30 补录 28）
+│   │   ├── universities.ts           # ★ 农业院校数据（80 所：V1 基础 25 + 2026-09-30 补录 28 + V3 审计新增 27）
 │   │   ├── universitiesBatch2026A.ts # ★ 补录批次 A（15 所：林业 5 + 水产 5 + 农业本科 5）
 │   │   ├── universitiesBatch2026B.ts # ★ 补录批次 B（13 所涉农特色综合大学）
+│   │   ├── universitiesBatch2026C.ts # ★ 补录批次 C（27 所：V3 审计新增，见 UNIVERSITY_AUDIT_2026.md）
 │   │   ├── researchInstitutes.ts     # ★ 农业科研机构数据（48 个：总院 + 专业所）
-│   │   ├── agriculturalInstitutions.ts  # 合并导出（101 个，页面唯一数据源）
+│   │   ├── agriculturalInstitutions.ts  # 合并导出（128 个，页面唯一数据源）
 │   │   └── researchFields.ts         # ★ 研究领域受控词表（RESEARCH_FIELDS + FIELD_GROUPS）
 │   ├── hooks/
 │   │   ├── useInstitutionFilters.ts  # 筛选状态 Hook
@@ -103,6 +104,11 @@ app/
 | `description` | `string` | 机构简介（卡片与地图浮层展示，可被搜索命中） |
 | `researchFields` | `string[]?` | 研究领域，**必须取自受控词表** `src/data/researchFields.ts` 的 `RESEARCH_FIELDS` |
 | `educationLevel` | `string?` | 院校用：办学层次（本科 / 高职） |
+| `educationType` | `string?` | 院校用：办学类型（普通本科 / 职业本科，职业本科以教发函为准） |
+| `universityCategory` | `string?` | 院校用：收录分类 A–F（F 类标注 F1/F2/F3），判定标准见 `DATA_SCOPE.md` |
+| `affiliationCategory` | `string?` | 隶属关系分类（教育部直属 / 省属 / 省部共建等） |
+| `inclusionReason` | `string?` | 收录理由：命中的判定类别 + 关键证据，须符合 `DATA_SCOPE.md` 证据优先级 |
+| `coordinateSystem` | `string?` | 坐标系标注（GCJ-02 / WGS-84 / 混合约值），见下文「坐标系说明」 |
 | `graduateTraining` | `boolean?` | 是否招收研究生：仅当 `description` 明确提及硕士/博士/本硕博/研究生培养时标 `true`，否则保持 `undefined`（证据驱动，不推测） |
 | `featured` | `boolean?` | 是否重点展示（体系树排序优先） |
 | `dataSource` / `lastVerifiedAt` | `string?` | 数据来源 / 最近核实日期 |
@@ -131,6 +137,12 @@ app/
 ### 研究领域受控词表
 
 `researchFields` 只能取自 `src/data/researchFields.ts` 的 `RESEARCH_FIELDS`（任务书 29 个领域）。筛选面板的领域下拉按同文件 `FIELD_GROUPS`（畜牧兽医 / 作物植保 / 资源环境 / 工程信息 / 其他）分组展示。新增领域词必须先扩词表，再在机构数据中使用。
+
+### 治理文档
+
+- `DATA_SCOPE.md`：收录主体范围、A–F 判定标准、排除规则、证据优先级、字段契约、去重与更名规则。
+- `UNIVERSITY_AUDIT_2026.md`：全国涉农本科高校 V3 审计报告（2026-09-30，新增 27 所 / 边界待核 2 所 / 排除 3 所 / 更名记录）。
+- `RESEARCH_INSTITUTE_BACKLOG.md`：科研机构扩展 backlog（水科院 / 林科院 / 热科院院属单位母表与后续批次待办）。
 
 ## 中国地图数据来源
 
