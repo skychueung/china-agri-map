@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <!-- 校园图占位图：浅绿渐变底 + 简约校园建筑/田野线条（开发阶段统一占位，避免版权风险） -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F1F7F3"/>
+      <stop offset="1" stop-color="#DCEADF"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)"/>
+  <g fill="none" stroke="#1F6B45" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.55">
+    <!-- 远山 -->
+    <path d="M0 320 L160 220 L320 320"/>
+    <path d="M240 320 L420 200 L600 320"/>
+    <!-- 主楼 -->
+    <rect x="380" y="240" width="200" height="120"/>
+    <path d="M370 240 L480 180 L590 240"/>
+    <line x1="430" y1="280" x2="430" y2="330"/>
+    <line x1="480" y1="280" x2="480" y2="330"/>
+    <line x1="530" y1="280" x2="530" y2="330"/>
+    <!-- 侧楼 -->
+    <rect x="610" y="280" width="110" height="80"/>
+    <path d="M604 280 L665 240 L726 280"/>
+    <!-- 树木 -->
+    <path d="M300 360 V320"/>
+    <circle cx="300" cy="308" r="18"/>
+    <path d="M770 360 V316"/>
+    <circle cx="770" cy="302" r="20"/>
+    <!-- 田野线条 -->
+    <path d="M0 400 C240 380 720 380 960 400"/>
+    <path d="M0 440 C240 420 720 420 960 440"/>
+    <path d="M0 480 C240 460 720 460 960 480"/>
+  </g>
+  <text x="480" y="500" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="28" fill="#1F6B45">校园图片 · 待补充</text>
+</svg>
